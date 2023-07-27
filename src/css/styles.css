@@ -1,25 +1,61 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* НІЧОГО НЕ ЗМІНЮВАТИ!!! ПРАЦЮЄ ТІЛЬКИ TEAMLEAD */
+
+/* Підключення стилей секцій */
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./variabels.css');
+@import url('./base.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./yahts.css');
+@import url('./services.css');
+@import url('./rent.css');
+@import url('./reviews.css');
+@import url('./footer.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* Підключення шрифтів */
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Medium'), local('DMSans-Medium'),
+      url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
+      url('../fonts/DMSans/DMSans-Medium.woff') format('woff'),
+      url('../fonts/DMSans/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Medium Italic'), local('DMSans-MediumItalic'),
+      url('../fonts/DMSans/DMSans-MediumItalic.woff2') format('woff2'),
+      url('../fonts/DMSans/DMSans-MediumItalic.woff') format('woff'),
+      url('../fonts/DMSans/DMSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Bold'), local('DMSans-Bold'),
+      url('../fonts/DMSans/DMSans-Bold.woff2') format('woff2'),
+      url('../fonts/DMSans/DMSans-Bold.woff') format('woff'),
+      url('../fonts/DMSans/DMSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Regular'), local('DMSans-Regular'),
+      url('../fonts/DMSans/DMSans-Regular.woff2') format('woff2'),
+      url('../fonts/DMSans/DMSans-Regular.woff') format('woff'),
+      url('../fonts/DMSans/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
