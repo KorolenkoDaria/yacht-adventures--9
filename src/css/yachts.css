@@ -1,0 +1,13 @@
+/* Володимир */
+.yacht-section {
+    background-color: var(--dark-bg);
+}
+.yacht-title {
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045;
+}
