@@ -7,6 +7,9 @@
     --dark-bg-elements: #1F212D;
     --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
   }
+  .footer-yacht {
+    background-color: var(--dark-bg);
+  }
 .logo-yacht {
     color: var(--white, #F6F5EF);
     font-family: DM Sans;
@@ -18,6 +21,9 @@
     text-transform: uppercase;
 
 }
+/* .logo-icon {
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+} */
 .yacht-list {
     color: #F6F5EF;
 font-family: DM Sans;
