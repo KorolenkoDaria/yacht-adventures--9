@@ -1,2 +1,40 @@
 /* Максим */
+:root {
+    /* main color */
+    --dark-bg: #11131F;
+    --white: #F6F5EF;
+    --light-green:  #93ABAE;
+    --dark-bg-elements: #1F212D;
+    --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
+  }
+.logo-yacht {
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%; /* 21.24px */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
 
+}
+.yacht-list {
+    color: #F6F5EF;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 118%; /* 16.52px */
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.text-yacht{
+    color: rgba(246, 245, 239, 0.50);
+text-align: center;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 118%; /* 16.52px */
+letter-spacing: 0.42px;
+}
