@@ -1,3 +1,4 @@
+/* НІЧОГО НЕ ЗМІНЮВАТИ!!! ПРАЦЮЄ ТІЛЬКИ TEAMLEAD */
 .container{
     min-width: 320px;
     max-width: 375px;
@@ -10,12 +11,11 @@
         padding: 0 32px;
     }
 }
-@media  only screen and (max-width: 768px) {
+@media  only screen and (max-width: 1280px) {
     .container{
         max-width: 1280px;
-        padding: 0 32px;
     }
 }
 body{
-    
+    font-family: 'DM Sans', sans-serif; 
 }

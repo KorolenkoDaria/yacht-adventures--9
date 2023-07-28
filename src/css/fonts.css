@@ -1,0 +1,47 @@
+/* НІЧОГО НЕ ЗМІНЮВАТИ!!! ПРАЦЮЄ ТІЛЬКИ TEAMLEAD */
+/* Підключення шрифтів */
+@font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans Medium'), local('DMSans-Medium'),
+        url('../fonts/DMSans/DMSans-Medium.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Medium.woff') format('woff'),
+        url('../fonts/DMSans/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans Medium Italic'), local('DMSans-MediumItalic'),
+        url('../fonts/DMSans/DMSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-MediumItalic.woff') format('woff'),
+        url('../fonts/DMSans/DMSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans Bold'), local('DMSans-Bold'),
+        url('../fonts/DMSans/DMSans-Bold.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Bold.woff') format('woff'),
+        url('../fonts/DMSans/DMSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'DM Sans';
+    src: local('DM Sans Regular'), local('DMSans-Regular'),
+        url('../fonts/DMSans/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/DMSans/DMSans-Regular.woff') format('woff'),
+        url('../fonts/DMSans/DMSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
