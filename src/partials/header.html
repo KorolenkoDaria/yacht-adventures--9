@@ -1,1 +1,48 @@
 <!-- Роман -->
+
+
+<!-- Хедер сторінки-->
+<header class="heder-studio">
+  <div class="container heder-past">
+    <nav class="menu">
+
+      <img src="/src/img/logo@1x.webp" alt="korablik" width="32" height="32">
+      <a href="./index.html" class="weblogo link">YACHT ADVENTURES</a>
+      <ul class="list menu-past">
+        <li><a href="./index.html" class="link hero-menu">About</a></li>
+        <li><a href="./index.html" class="link hero-menu-studio">Yachts</a></li>
+        <li><a href="./index.html" class="link hero-menu-studio">Reviews</a></li>
+      </ul>
+    </nav>
+
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-toggle-icon" width="32" height="32">
+        <use href="./img/icons.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Модальне вікно Хедер -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle-modal js-close-menu">
+    <svg class="menu-container-clouse" width="8" height="8">
+      <use href="./img/icons.svg#icon-menu-close"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu-link"><a href="" class="link studio-color">About</a></li>
+    <li class="mobile-menu-link"><a href="" class="link link-color">Yachts</a></li>
+    <li class="mobile-menu-link"><a href="" class="link link-color">Reviews</a></li>
+  </ul>
+
+</div>
+
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
+
