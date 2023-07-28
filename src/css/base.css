@@ -20,4 +20,8 @@
 }
 body{
     font-family: 'DM Sans', sans-serif; 
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
 }
