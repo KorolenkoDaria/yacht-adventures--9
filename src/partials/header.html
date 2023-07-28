@@ -1,1 +1,68 @@
 <!-- Роман -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YACHT ADVENTURES</title>
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+<!-- Хедер сторінки-->
+  <header class="heder-studio">
+    <div class="container heder-past">
+      <nav class="menu">
+        <svg class="menu-toggle-icon" width="32" height="32">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        <a href="./index.html" class="weblogo link">YACHT ADVENTURES</a>
+
+        <ul class="list menu-past">
+          <li><a href="./index.html" class="link hero-menu">About</a></li>
+          <li><a href="./index.html" class="link hero-menu-studio">Yachts</a></li>
+          <li><a href="./index.html" class="link hero-menu-studio">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-toggle-icon" width="32" height="32">
+          <use href="./img/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Модальне вікно Хедер -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle-modal js-close-menu">
+      <svg class="menu-container-clouse" width="8" height="8">
+        <use href="./img/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu-link"><a href="" class="link studio-color">About</a></li>
+      <li class="mobile-menu-link"><a href="" class="link link-color">Yachts</a></li>
+      <li class="mobile-menu-link"><a href="" class="link link-color">Reviews</a></li>
+    </ul>
+
+  </div>
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>
