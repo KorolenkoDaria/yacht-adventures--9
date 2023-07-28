@@ -7,7 +7,11 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about.css');
+/* <<<<<<< Updated upstream
 @import url('./yahts.css');
+======= */
+@import url('./yachts.css');
+/* >>>>>>> Stashed changes */
 @import url('./services.css');
 @import url('./rent.css');
 @import url('./reviews.css');
