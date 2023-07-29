@@ -1,1 +1,128 @@
 /* Наталія */
+
+
+/* body {
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.28px;
+} */
+
+.about-container {}
+
+/* .about-sect-style {
+    background-color: var(--dark-bg);
+} */
+
+.about-title {
+    color: currentColor;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.08px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-title {
+        font-size: 32px;
+        letter-spacing: -1.44px;
+        margin-bottom: 32px;
+        max-width: 514px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .about-title {}
+}
+
+.about-span {
+    color: var(--light-green);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.08px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-span {
+        font-size: 32px;
+        letter-spacing: -1.44px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .about-span {}
+}
+
+.about-list {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-list {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 40px;
+        justify-content: flex-end;
+    }
+}
+
+.about-list-par {}
+
+@media only screen and (min-width: 768px) {
+    .about-list-par {
+        max-width: 185px;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}
+
+.about-text-container {}
+
+@media only screen and (min-width: 1280px) {
+    .about-text-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.about-list-yachts {}
+
+@media only screen and (min-width: 768px) {
+    .about-list-yachts {
+        max-width: 704px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+}
+
+.about-list-card {}
+
+.about-card-1 {}
+
+@media only screen and (min-width: 768px) {
+    .about-card-1 {
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-bottom: 32px;
+    }
+}
+
+.about-card-2 {}
+
+@media only screen and (min-width: 768px) {
+    .about-card-2 {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.about-card-3 {}
