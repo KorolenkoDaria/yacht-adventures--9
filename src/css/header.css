@@ -1,18 +1,22 @@
 
 /* Роман */
-
-  .header-studio {
+    .container {
+      padding: 0;
+    }
+  .header-studio-container {
       border-bottom: 1px solid #f6f5ef33;
-      width: 100%;
-      margin-left: 32px;
-      margin-right: 32px;
     }
 
   .header-menu {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
-  
+  .header-menu-logo {
+    display: flex;
+    align-items: center;
+  }
+
   .header-menu-past {
     gap: 24px;
     display: flex;
@@ -26,23 +30,22 @@
   
   .header-weblogo {
     padding: 26px 8px;
-    margin: auto;
-    margin-left: 0;
     color: #F6F5EF;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: DM Sans;
-    font-size: 21px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
-  @media only screen and (min-width: 395px) {
+  @media only screen and (min-width: 768px) {
     .header-weblogo  {
       padding: 33px 8px;
       line-height: 1.18;
       letter-spacing: 0.54px;
+      font-size: 18px;
     }
   }
   .header-title {
@@ -63,7 +66,7 @@
     height: 24px;
     width: 24px;
     display: block;
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     justify-content: center;
     background-color: transparent;
