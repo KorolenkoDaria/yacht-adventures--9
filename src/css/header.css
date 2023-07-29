@@ -3,6 +3,7 @@
 
   .header-studio {
       border-bottom: 1px solid #F6F5EF;
+
       /* stroke-width: 1px;
       stroke: rgba(246, 245, 239, 0.20); */
     }
@@ -25,19 +26,26 @@
     }
   
   .header-weblogo {
-    padding: 24px 8px;
-    margin-right: 76px;
+    padding: 26px 8px;
+    margin: auto;
+    margin-left: 0;
     color: #F6F5EF;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: DM Sans;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.18;
-    letter-spacing: 0.54px;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
   }
-
+  @media only screen and (min-width: 395px) {
+    .header-weblogo  {
+      padding: 33px 8px;
+      line-height: 1.18;
+      letter-spacing: 0.54px;
+    }
+  }
   .header-title {
     color: #F6F5EF;
     font-family: DM Sans;
@@ -48,29 +56,8 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     display: flex;
-    gap: 40px;
-    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .activ:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: #F6F5EF;
-  
-  }
-  .header-title:hover,
-  .header-title:focus {
-    color: #F6F5EF;
   }
   
   .header-toggle {
@@ -93,11 +80,7 @@
       display: none;
     }
   }
-  
-  .header-toggle:hover,
-  .header-toggle:focus {
-    background-color: #F6F5EF;
-  }
+
   .header-toggle-icon {
     fill: #F6F5EF;
   }
