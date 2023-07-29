@@ -1,5 +1,4 @@
-<!-- Роман -->
-
+<!------------------------- Роман --------------------------------------------------------------------->
 
 <!-- Хедер сторінки-->
 <header class="header-studio">
@@ -22,7 +21,6 @@
         </svg>
       </button>
     </nav>
-
   </div>
 </header>
 
@@ -39,46 +37,12 @@
       <use href="./img/icons.svg#icon-menu-close"></use>
     </svg>
   </button>
-
   <ul class="header-mobile-menu">
     <li class="header-mobile-menu-link"><a href="" class="link header-color">About</a></li>
     <li class="header-mobile-menu-link"><a href="" class="link header-color">Yachts</a></li>
     <li class="header-mobile-menu-link"><a href="" class="link header-color">Reviews</a></li>
   </ul>
-
 </div>
 
 <!--  Скрипт для хедеру модального вікна -->
 <script  src="../js/mobile-menu.js"></script>
-
-<!--JC для хедеру модального меню -->
-<!--  
-  (() => {
-    const mobileMenu = document.querySelector('.js-header-container');
-    const openMenuBtn = document.querySelector('.js-open-menu');
-    const closeMenuBtn = document.querySelector('.js-close-menu');
-  
-    const toggleMenu = () => {
-      const isMenuOpen =
-        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-      mobileMenu.classList.toggle('is-open');
-  
-      const scrollLockMethod = !isMenuOpen
-        ? 'disableBodyScroll'
-        : 'enableBodyScroll';
-      bodyScrollLock[scrollLockMethod](document.body);
-    };
-  
-    openMenuBtn.addEventListener('click', toggleMenu);
-    closeMenuBtn.addEventListener('click', toggleMenu);
-  
-    // Close the mobile menu on wider screens if the device orientation changes
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-      if (!e.matches) return;
-      mobileMenu.classList.remove('is-open');
-      openMenuBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
-    });
-  })();
--->
