@@ -3,10 +3,15 @@
     .container {
       padding: 0;
     }
+
   .header-studio-container {
       border-bottom: 1px solid #f6f5ef33;
     }
 
+  .header-studio {
+    height: 72px;
+  }
+  
   .header-menu {
     display: flex;
     align-items: center;
@@ -40,6 +45,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
+
   @media only screen and (min-width: 768px) {
     .header-weblogo  {
       padding: 33px 8px;
@@ -66,7 +72,6 @@
     height: 24px;
     width: 24px;
     display: block;
-    /* position: absolute; */
     align-items: center;
     justify-content: center;
     background-color: transparent;
@@ -75,6 +80,7 @@
     cursor: pointer;
     border: none;
     outline: none;
+        /* position: absolute; */
   }
   
   @media (min-width: 768px) {
@@ -143,8 +149,8 @@
     border-radius: 50%;
     border: 1px solid #F6F5EF;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
   }
+
   .header-toggle-modal {
     min-height: 24px;
     min-width: 24px;
