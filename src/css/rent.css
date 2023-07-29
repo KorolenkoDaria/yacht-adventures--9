@@ -1,1 +1,196 @@
 /* Вікторія */
+
+.rent-container {
+    padding: 40px 20px;
+    /* position: relative; */
+}
+
+.rent-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.62px;
+    margin-bottom: 16px;
+}
+
+.rent-img {
+    margin-bottom: 40px;
+    width: 259px;
+}
+
+.rent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rent-field {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F5EF;
+}
+
+.rent-label {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.63px;
+}
+
+
+.rent-input {
+    background-color: transparent;
+    border: none;
+    height: 16px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #F6F5EF;
+    font-size: 12px;
+    outline: transparent;
+}
+
+.textarea-field {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F5EF;
+}
+
+.rent-textarea {
+    background-color: transparent;
+    border: none;
+    height: 58px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #F6F5EF;
+    font-size: 12px;
+    outline: transparent;
+}
+
+.rent-button {
+    display: flex;
+    padding: 14px 28px;
+    gap: 16px;
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    max-width: 123px;
+    cursor: pointer;
+}
+
+.rent-btn-icon {
+
+}
+
+/* .ellipse {
+    top: 440px;
+    left: 154px;
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    transform: rotate(-44.916deg);
+    border-radius: 283px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    z-index: 1;
+} */
+
+@media only screen and (min-width: 768px) {
+    .rent-container {
+        padding: 50px 32px;
+        display: flex;
+    }
+
+    .rent-block {
+        margin-right: 53px;
+    }
+
+    .rent-title {
+        font-size: 60px;
+        letter-spacing: -1.7px;
+        margin-bottom: 32px;
+        max-width: 287px;
+    }
+
+    .rent-img {
+        margin-bottom: unset;
+        width: 271px;
+    }
+
+    .rent-form {
+        min-width: 364px;
+        gap: unset;
+    }
+
+    .rent-field {
+        margin-bottom: 28px;
+    }
+
+    .rent-label {
+        font-size: 16px;
+        letter-spacing: -0.72px;
+    }
+
+    .textarea-field {
+        margin-bottom: 32px;
+    }
+
+    .rent-button {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+        max-width: 132px;
+    }
+
+    /* .ellipse {
+        top: 440px;
+        left: 154px;
+        width: 283px;
+        height: 283px;
+    } */
+}
+
+@media only screen and (min-width: 1280px) {
+    .rent-container {
+        padding: 82px 183px 82px 184px;
+    }
+
+    .rent-block {
+        margin-right: 188px;
+    }
+
+    .rent-title {
+        margin-bottom: 64px;
+        max-width: 282px;
+        letter-spacing: -2.7px;
+    }
+
+    .rent-img {
+        width: 282px;
+        height: 191px;
+    }
+
+    .rent-form {
+        min-width: 443px;
+    }
+
+    .textarea-field {
+        margin-bottom: 64px;
+    }
+
+    /* .ellipse {
+        top: 440px;
+        left: 154px;
+        width: 283px;
+        height: 283px;
+    } */
+
+}
