@@ -23,38 +23,110 @@
     </div>
 
     <ul class="about-list-yachts">
-      <li class="about-list-card">
-        <img
+      <li class="about-list-card-1">
+        <picture class="about-card-1">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/about/about_big-yaht@1x.webp 1x,
+              ./img/about/about_big-yaht@2x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/about/about_middle-yaht-mob@1x.webp 1x,
+              ./img/about/about_middle-yaht-mob@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="./img/about/about_big-yaht@1x.webp" alt="" />
+        </picture>
+      </li>
+
+      <li class="about-list-card-2">
+        <picture class="about-card-2">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/about/about_middle-yaht@1x.webp  1x,
+              ./img/about/about_middle-yahtb@2x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/about/about_middle-yaht@1x.webp 1x,
+              ./img/about/about_middle-yaht@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="./img/about/about_middle-yaht@1x.webp" alt="" />
+        </picture>
+      </li>
+
+      <li class="about-list-card-3">
+        <picture class="about-card-3">
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/about/about_small-yaht@1x.webp 1x,
+              ./img/about/about_small-yaht@1x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./img/about/about_small-yaht@1x.webp 1x,
+              ./img/about/about_small-yaht@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img src="./img/about/about_small-yaht@1x.webp" alt="" />
+        </picture>
+      </li>
+
+      <!-- <img
           class="about-card-1"
           srcset="
-            ../img/about/about_big-yaht@1x.webp 1x,
-            ./img/about/about_big-yaht_2x.webp  2x
+            ./img/about/about_middle-yaht-mob@1x.webp 1x,
+            ./img/about/about_middle-yaht-mob@2x.webp 2x
           "
-          src="../img/about/about_big-yaht@1x.webp"
+          src="./img/about/about_middle-yaht-mob@1x.webp"
           alt="Bow of the yacht with seats"
-        />
-      </li>
-      <li class="about-list-card">
-        <img
+        /> -->
+
+      <li class="about-list-card-2">
+        <!-- <img
+          width="335"
+          height="289"
           class="about-card-2"
           srcset="
-            ./img/about/about_middle-yaht_1x.webp 1x,
-            ./img/about/about_middle-yaht_2x.webp 2x
+            ./img/about/about_middle-yaht@1x.webp 1x,
+            ./img/about/about_middle-yaht@2x.webp 2x
           "
-          src="./img/about/about_middle-yaht_1x.webp"
+          src="./img/about/about_middle-yaht@1x.webp"
           alt="Yacht cockpit"
-        />
+        /> -->
       </li>
-      <li class="about-list-card">
-        <img
+      <li class="about-list-card-3">
+        <!-- <img
+          width="260"
+          height="244"
           class="about-card-3"
           srcset="
-            ./img/about/about_small-yaht_1x.webp 1x,
-            ./img/about/about_small-yaht_1x.webp 2x
+            ./img/about/about_small-yaht@1x.webp 1x,
+            ./img/about/about_small-yaht@2x.webp 2x
           "
-          src="./img/about/about_small-yaht_1x.webp"
+          src="./img/about/about_small-yaht@1x.webp"
           alt="White yacht in the sea"
-        />
+        /> -->
       </li>
     </ul>
   </div>

@@ -1,21 +1,21 @@
 /* Наталія */
 
-
-/* body {
-    color: var(--white, #F6F5EF);
-    font-family: DM Sans, sans-serif;
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    background-color: var(--dark-bg);
+}
+
+body {
     line-height: 1.4;
     letter-spacing: -0.28px;
-} */
+}
 
 .about-container {}
 
-/* .about-sect-style {
-    background-color: var(--dark-bg);
-} */
 
 .about-title {
     color: currentColor;
@@ -69,7 +69,7 @@
     .about-list {
         display: flex;
         gap: 32px;
-        margin-bottom: 40px;
+        margin-bottom: 64px;
         justify-content: flex-end;
     }
 }
@@ -93,36 +93,81 @@
     }
 }
 
-.about-list-yachts {}
+.about-list-yachts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 146px;
+}
+
 
 @media only screen and (min-width: 768px) {
     .about-list-yachts {
         max-width: 704px;
         margin-left: auto;
         margin-right: auto;
-        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        padding-bottom: 83px;
     }
 }
 
-.about-list-card {}
-
-.about-card-1 {}
-
-@media only screen and (min-width: 768px) {
-    .about-card-1 {
-        /* margin-left: auto;
-        margin-right: auto; */
-        margin-bottom: 32px;
-    }
-}
-
-.about-card-2 {}
-
-@media only screen and (min-width: 768px) {
-    .about-card-2 {
-        margin-right: auto;
+@media only screen and (min-width: 1280px) {
+    .about-list-yachts {
+        max-width: 873px;
+        padding-bottom: 164px;
         margin-left: 0;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
-.about-card-3 {}
+
+@media only screen and (min-width: 768px) {
+    .about-list-card-1 {
+    width: 704px;
+}
+}
+
+
+@media only screen and (min-width: 1280px){
+  .about-list-card-1{
+      width: 553px;
+      transform: translateX(364px);
+  } 
+}
+
+
+@media only screen and (min-width: 1280px) {
+.about-list-card-2 {
+        width: 335px;
+        position: absolute;
+        bottom: 95px;
+    }
+}
+
+.about-list-card-3{
+width: 260px;
+height: 244px;
+position: absolute;
+bottom: -100px;
+right: 0;
+}
+
+ @media only screen and (min-width: 768px) {
+.about-list-card-3 {
+        bottom: -70px;
+        right: 104px;
+    }
+ }
+
+ @media only screen and (min-width: 1280px) {
+.about-list-card-3 {
+        bottom: -112px;
+        left: 363px;
+    }
+ }
