@@ -92,11 +92,7 @@
   .header-toggle-icon {
     fill: #F6F5EF;
   }
-  
-  .header-mobile-menu-link:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  
+
   .header-color {
     color: #F6F5EF;
     font-family: DM Sans;
