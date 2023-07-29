@@ -1,8 +1,15 @@
 /* Вікторія */
 
+.rent {
+
+}
+
+.rent .rent-container {
+    position: relative;
+}
+
 .rent-container {
     padding: 40px 20px;
-    /* position: relative; */
 }
 
 .rent-title {
@@ -64,6 +71,7 @@
     color: #F6F5EF;
     font-size: 12px;
     outline: transparent;
+    resize: none;
 }
 
 .rent-button {
@@ -90,19 +98,20 @@
 
 }
 
-/* .ellipse {
-    top: 440px;
+.ellipse {
+    top: 380px;
     left: 154px;
     position: absolute;
     width: 283px;
     height: 283px;
     transform: rotate(-44.916deg);
     border-radius: 283px;
+    flex-shrink: 0;
     opacity: 0.6000000238418579;
     background: #91AFBA;
     filter: blur(100px);
-    z-index: 1;
-} */
+    z-index: -1;
+}
 
 @media only screen and (min-width: 768px) {
     .rent-container {
@@ -150,12 +159,13 @@
         max-width: 132px;
     }
 
-    /* .ellipse {
-        top: 440px;
-        left: 154px;
-        width: 283px;
-        height: 283px;
-    } */
+    .ellipse {
+        top: 40px;
+        left: 538px;
+        width: 413px;
+        height: 413px;
+        border-radius: 413px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -186,11 +196,12 @@
         margin-bottom: 64px;
     }
 
-    /* .ellipse {
-        top: 440px;
-        left: 154px;
-        width: 283px;
-        height: 283px;
-    } */
+    .ellipse {
+        top: 111px;
+        left: 985px;
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+    }
 
 }
