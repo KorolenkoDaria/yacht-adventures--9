@@ -67,10 +67,15 @@
     z-index: 11;
 }
 
-.yacht-swiper {
+.yacht-slider {
+    margin: 0 auto;
+    
+}
+.yacht-slider-wrapper {
+    display: flex;
+    gap: 16px;
     margin: 0 auto;
 }
-
 .yacht-card {
     background-color: var(--dark-bg-elements);
     padding: 18px;
@@ -79,9 +84,6 @@
     gap: 24px;
     border-radius: 24px;
     width: 100%;
-}
-.yacht-swiper-wrapper {
-    margin: 0 auto;
 }
 
 .yacht-card-title-row {
@@ -179,6 +181,11 @@
         width: 100%;
     }
 }
+@media (max-width: 767.9px) {
+    .yacht-card:not(:first-child) {
+        display: none;
+    }
+}
 
 @media (min-width: 768px) {
     
@@ -197,14 +204,23 @@
         width: 153px;
         height: 48px;
     }
-
+    .yacht-card:nth(2) {
+        display: initiale;
+    }
     .yacht-card {
         width: 344px;
     }
 }
-
+@media (max-width: 767.9px) {
+    .yacht-card:not(:first-child) {
+        display: none;
+    }
+}
 @media (max-width: 1279.9px) {
     .yacht-spiral {
+        display: none;
+    }
+    .yacht-card:nth-child(n+2) {
         display: none;
     }
 }
