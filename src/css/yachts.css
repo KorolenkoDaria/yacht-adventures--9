@@ -153,11 +153,11 @@
 .yacht-slider-arrow {
     width: 46px;
     height: 36px;
+       
 }
 .yacht-slider-button {
-    background-color: transparent;
-    border: none;
-    
+    /* background-color: transparent;
+    border: none;       */
 }
 .yacht-slider-button-container {
     display: flex;
