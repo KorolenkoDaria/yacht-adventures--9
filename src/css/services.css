@@ -1,1 +1,134 @@
 /* Влад  */
+.services-section .container {
+    position: relative;
+}
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.services-section .container::before {
+    content: "";
+    width: 323px;
+    height: 323px;
+    transform: rotate(-45.074deg);
+
+    border-radius: 323px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    position: absolute;
+    top: 238px;
+    left: -286px;
+}
+
+.services-list-item {
+    position: relative;
+}
+
+.services-img {
+    width: 100%;
+    height: 100%;
+    max-width: 335px;
+    max-height: 335px;
+}
+
+.services-button {
+    padding: 14px 28px;
+    background-color: var(--white);
+    border-radius: 60px;
+    border: none;
+
+    color: var(--dark-bg-elements);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .services-list {
+        gap: 32px;
+    }
+
+    .services-list-item img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .services-list-item.diving img {
+        width: 704px;
+        height: 632px;
+    }
+
+    .services-list-item.fishing img {
+        width: 400px;
+        height: 389px;
+    }
+
+    .services-list-item.fishing {
+        align-self: end;
+    } 
+
+    .services-list-item.sunbathing img {
+        width: 380px;
+        height: 352px;
+    }
+    
+    .services-list-item.sunbathing {
+        margin-left: 32px;
+    }
+
+    .services-button {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+        left: 32px;
+        bottom: 32px;
+    }
+
+    .services-section .container::before {
+        content: "";
+        width: 414px;
+        height: 414px;
+        border-radius: 414px;
+        top: 480px;
+        left: calc((-414px / 2) - 32px);
+    }
+}
+@media only screen and (min-width: 1280px) {
+
+    .services-list-item.diving img {
+        width: 712px;
+        height: 632px;
+    }
+
+    .services-list-item.fishing img {
+        width: 440px;
+        height: 428px;
+    }
+
+    .services-list-item.sunbathing img {
+        width: 436px;
+        height: 352px;
+    }
+    
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px;
+    }
+
+    .services-list-item.sunbathing {
+        margin-left: 340px;
+    }
+
+    .services-section .container::before {
+        top: 145px;
+    }
+}
