@@ -2,48 +2,43 @@
 
 <!-- Хедер сторінки-->
 <header class="header-studio">
-  <div class="header-studio-container container">
-    <nav class="header-menu">
-      <div class="header-menu-logo">
-        <img
-        srcset="./img/logo@1x.webp 1x, ./img/logo@2x.webp 2x"
-        src="./img/logo@1x.webp" alt="logo" width="23" height="23">
-        <a href="./index.html" class="header-weblogo link">YACHT ADVENTURES</a>
-      </div>
-      <ul class="list header-menu-past">
-        <li><a href="./index.html" class="link header-title">About</a></li>
-        <li><a href="./index.html" class="link header-title">Yachts</a></li>
-        <li><a href="./index.html" class="link header-title">Reviews</a></li>
-      </ul>
-      <button class="header-toggle js-open-menu" aria-expanded="false" aria-controls="header-mobile-menu">
-        <svg class="header-toggle-icon" width="24" height="24">
-          <use href="./img/icons.svg#icon-burger-menu"></use>
-        </svg>
-      </button>
-    </nav>
-  </div>
+    <div class="header-studio-container container">
+        <nav class="header-menu">
+            <div class="header-menu-logo">
+                <img class="header-logo-img" srcset="./img/logo@1x.webp 1x, ./img/logo@2x.webp 2x"
+                    src="./img/logo@1x.webp" alt="logo" width="32" height="32">
+                <a href="./index.html" class="header-weblogo link">YACHT ADVENTURES</a>
+            </div>
+            <ul class="list header-menu-past">
+                <li><a href="./index.html" class="link header-title">About</a></li>
+                <li><a href="./index.html" class="link header-title">Yachts</a></li>
+                <li><a href="./index.html" class="link header-title">Reviews</a></li>
+            </ul>
+            <button class="header-toggle js-open-menu" aria-expanded="false" aria-controls="header-mobile-menu">
+                <svg class="header-toggle-icon" width="24" height="24">
+                    <use href="./img/icons.svg#icon-burger-menu"></use>
+                </svg>
+            </button>
+        </nav>
+    </div>
 </header>
 
 <!-- Модальне вікно Хедер -->
-<div class="header-container js-header-container">
-  <div class="header-menu-logo header-studio-container">
-    <img
-    srcset="./img/logo@1x.webp 1x, ./img/logo@2x.webp 2x"
-    src="./img/logo@1x.webp" alt="logo" width="23" height="23">
-    <a href="./index.html" class="header-weblogo link">YACHT ADVENTURES</a>
-    <button class="header-toggle-modal js-close-menu">
-      <svg class="header-container-clouse" width="8" height="8">
-        <use href="./img/icons.svg#icon-menu-close"></use>
-      </svg>
-    </button>
-  </div>
+<div class="header-container js-menu-container is-open" id="mobile-menu">
+    <div class="header-menu-logo header-studio-container container">
+        <img class="header-menu-logo-img" srcset="./img/logo@1x.webp 1x, ./img/logo@2x.webp 2x" src="./img/logo@1x.webp"
+            alt="logo" width="23" height="23">
+        <a href="./index.html" class="header-weblogo link">YACHT ADVENTURES</a>
+        <button class="header-toggle-modal js-close-menu">
+            <svg class="header-container-clouse" width="8" height="8">
+                <use href="./img/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+    </div>
 
-  <ul class="header-mobile-menu">
-    <li class="header-mobile-menu-link"><a href="" class="link header-color">About</a></li>
-    <li class="header-mobile-menu-link"><a href="" class="link header-color">Yachts</a></li>
-    <li class="header-mobile-menu-link"><a href="" class="link header-color">Reviews</a></li>
-  </ul>
+    <ul class="header-mobile-menu">
+        <li class="header-mobile-menu-link"><a href="" class="link header-color">About</a></li>
+        <li class="header-mobile-menu-link"><a href="" class="link header-color">Yachts</a></li>
+        <li class="header-mobile-menu-link"><a href="" class="link header-color">Reviews</a></li>
+    </ul>
 </div>
-
-<!--  Скрипт для хедеру модального вікна -->
-<script  src="../js/mobile-menu.js"></script>
