@@ -238,3 +238,7 @@
         border: 1px solid var(--white, #F6F5EF);
         
     } */
+.yacht-swiper-btn {
+    background-color: transparent;
+    border: none;
+}
