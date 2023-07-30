@@ -1,9 +1,9 @@
 
-
 :root {
     /* main color */
     --dark-bg: #11131F;
     --white: #F6F5EF;
     --light-green:  #93ABAE;
     --dark-bg-elements: #1F212D;
+    --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
   }

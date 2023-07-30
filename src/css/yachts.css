@@ -1,18 +1,13 @@
 /* Володимир */
 
 /* Тимчасово */
-.container {
-padding: 0 20px;
-min-width: 320px;
-max-width: 375px;
-margin: 0 auto;
 
-}
 .yacht-section {
-    background-color: var(--dark-bg);    
+    background-color: var(--dark-bg);
     padding-top: 146px;
     min-width: 320px;
 }
+
 .yacht-blur-1 {
     width: 255px;
     height: 255px;
@@ -22,6 +17,7 @@ margin: 0 auto;
     left: -58px;
     top: -35px;
 }
+
 .yacht-blur-2 {
     width: 195px;
     height: 195px;
@@ -29,13 +25,15 @@ margin: 0 auto;
     flex-shrink: 0;
     position: absolute;
     right: -38px;
-    top: -20px;    
+    top: -20px;
 }
+
 .yachts-white-spot {
     background-color: #91AFBA;
     opacity: 0.6000000238418579;
     filter: blur(100px);
 }
+
 .yacht-title-block {
     display: flex;
     flex-direction: column;
@@ -43,22 +41,24 @@ margin: 0 auto;
     position: relative;
     margin-bottom: 80px;
     z-index: 11;
-    
+
 }
+
 .yacht-title {
     color: var(--white);
-    font-family: DM Sans;
+
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.045em;
-    width: 100%;    
+    width: 100%;
 }
+
 .yacht-button {
     background-color: rgba(0, 0, 0, 0);
     color: var(--white);
-    font-family: DM Sans;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -75,6 +75,7 @@ margin: 0 auto;
 .yacht-swiper {
     margin: 0 auto;
 }
+
 .yacht-card {
     background-color: var(--dark-bg-elements);
     padding: 18px;
@@ -83,20 +84,22 @@ margin: 0 auto;
     gap: 24px;
     border-radius: 24px;
     width: calc(100% - 40px);
-    
+
 }
+
 /* .yacht-card-image {
-    display: block;
-    width: 100%;
-} */
+        display: block;
+        width: 100%;
+    } */
 .yacht-card-title-row {
     display: flex;
     justify-content: space-between;
     padding: 0 6px;
 }
+
 .yachts-card-title {
     color: var(--white);
-    font-family: DM Sans;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -104,30 +107,33 @@ margin: 0 auto;
     letter-spacing: -0.045;
     text-transform: uppercase;
 }
+
 .yachts-card-status {
     color: var(--white, #F6F5EF);
-    font-family: DM Sans;
+
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.18;       
+    line-height: 1.18;
     letter-spacing: 0.03;
     text-transform: uppercase;
     opacity: 0.5;
 }
+
 .yacht-card-table {
     color: var(--white);
-    font-family: DM Sans;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.03;
-    
+
 }
+
 .yacht-card-dates {
     color: var(--white);
-    font-family: DM Sans;
+
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -138,16 +144,19 @@ margin: 0 auto;
     column-gap: 32px;
     padding: 0 6px 6px 6px;
 }
+
 .yacht-card-char {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
+
 .yacht-card-value {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
+
 @media (min-width: 375px) {
     .container {
         padding: 0 20px;
@@ -155,16 +164,20 @@ margin: 0 auto;
         max-width: 375px;
         margin: 0 auto;
     }
+
     .yacht-title {
         width: 310px;
     }
+
     .yacht-card {
         width: 335px;
     }
+
     .yacht-card-image {
         width: 100%;
-    }    
+    }
 }
+
 @media (min-width: 768px) {
     .container {
         padding: 0 32px;
@@ -172,23 +185,28 @@ margin: 0 auto;
         max-width: 768px;
         margin: 0 auto;
     }
+
     .yacht-title-block {
         margin: 0 auto;
         width: 640px;
     }
+
     .yacht-title {
         font-size: 70px;
         width: 641px;
     }
+
     .yacht-button {
         font-size: 18px;
         width: 153px;
         height: 48px;
     }
+
     .yacht-card {
         width: 344px;
     }
 }
+
 @media (min-width: 1280px) {
     .container {
         padding: 0 32px;
@@ -196,23 +214,27 @@ margin: 0 auto;
         max-width: 1280px;
         margin: 0 auto;
     }
+
     .yacht-title-block {
         margin: 0 auto;
         width: 882px;
     }
+
     .yacht-title {
         font-size: 100px;
         width: 882px;
     }
+
     .yacht-spiral {
         stroke: var(--white);
         fill: var(--white);
     }
 }
+
 /* .yacht-swiper-button {
-    width: 46px;
-    height: 36px;
-    border-radius: 60px;
-    border: 1px solid var(--white, #F6F5EF);
-    
-} */
+        width: 46px;
+        height: 36px;
+        border-radius: 60px;
+        border: 1px solid var(--white, #F6F5EF);
+        
+    } */

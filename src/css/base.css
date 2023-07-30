@@ -1,21 +1,26 @@
+/* НІЧОГО НЕ ЗМІНЮВАТИ!!! ПРАЦЮЄ ТІЛЬКИ TEAMLEAD */
 .container{
     min-width: 320px;
     max-width: 375px;
     padding: 0 20px;
-    background-color: var(--dark-blue);
+    margin: 0 auto;
 }
-@media  only screen and (max-width: 768px) {
+@media  only screen and (min-width: 768px) {
     .container{
         max-width: 768px;
-        padding: 0 32px;
+        padding: 0 32px; 
     }
 }
-@media  only screen and (max-width: 768px) {
+@media  only screen and (min-width: 1280px) {
     .container{
         max-width: 1280px;
-        padding: 0 32px;
     }
 }
 body{
-    
+    font-family: 'DM Sans', sans-serif; 
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--dark-bg);
 }
