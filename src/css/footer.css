@@ -1,1 +1,112 @@
 /* Максим */
+.footer-container {
+    padding-top: 64px;
+    border-top: 1px solid rgba(246, 245, 239, 0.20);
+
+}
+
+.footer-logo-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 41px;
+}
+
+.footer-logo-link {
+    color: var(--white, #c2c2c2);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-left: 3px;
+}
+
+.footer-logo-img {
+    width: 25px;
+    height: 25px;
+}
+
+.section-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text-list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-menu-list {
+    color: #F6F5EF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.icons-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-soc-container {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.icons-soc {
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.50);
+}
+
+.footer-text-item {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+
+}
+
+.about-yacht {
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+
+}
+
+.item-soc-yacht {
+    display: flex;
+    justify-content: right;
+}
+
+.footer-soc-title {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
