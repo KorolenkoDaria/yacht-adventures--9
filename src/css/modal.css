@@ -1,4 +1,11 @@
 /* Марія */
+.rent-container{
+padding: 40px 24px 40px 24px;
+
+
+}
+
+
 .rent-backdrop {
     position: fixed;
     top: 0;
@@ -40,10 +47,10 @@ background: #1F212D;
     align-items: center;
    
     background-color: #1F212D;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
     top: 14px;
     right: 14px;
     
@@ -52,11 +59,10 @@ background: #1F212D;
 
 
 .rent-svg {
-
-    width: 24px;
-height: 24px;
+ width: 20px;
+height: 20px;
 flex-shrink: 0;
-/* fill: none; */
+
 }
 
 
@@ -79,25 +85,13 @@ flex-shrink: 0;
     width: 287px;
 height: 149px;
 flex-shrink: 0;
-padding-top: 40px;
-padding-left: 24px;
+/* padding-top: 40px;
+padding-left: 24px; */
 display: block;
-/* flex-direction: column; */
 
-
-
-
-    /* border-radius: 265px;
-    opacity: 0.6000000238418579;
-    background: #91AFBA;
-    filter: blur(100px);  */
 }
 
-.rent-text{
-    padding: 40px 24px;
-    
-    
-}
+
 
 .rent-gratitude {
     color:  #F6F5EF;
@@ -107,6 +101,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 120%; 
 letter-spacing: -1.08px;
+margin-top: 24px;
 }
 
 
@@ -118,7 +113,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; 
 letter-spacing: -0.28px;
-margin-top: 14px;
+margin-top: 16px;
 
 }
 
@@ -136,6 +131,13 @@ margin-top: 14px;
         filter: blur(100px);
         z-index: 1000;
     }
+.rent-container{
+    padding-top: 97px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 64px;
+}
+
 
 .rent-modal-window {
 
@@ -154,8 +156,8 @@ margin-top: 14px;
 
 .rent-text{
     
-    padding-left: 64px;
-    padding-top: 21px;
+    /* padding-left: 64px; */
+    /* padding-top: 21px; */
 
     
     
@@ -165,12 +167,13 @@ margin-top: 14px;
 .rent-img-yaht {
     width: 338px;
 height: 198px;
-padding-top: 97px;
-padding-left: 116px;
+margin: auto;
+
 }
 
 .rent-gratitude{
     font-size: 32px;
+    margin-top: 21px;
 }
 .rent-gratitude-paragraph{
     font-size: 16px;
@@ -192,20 +195,19 @@ padding-left: 116px;
         left: 524px;
     }
     
-    
-    .rent-text{
-       
+    .rent-container{
+        padding-top: 97px;
         padding-left: 64px;
-        
-        
-        
+        padding-right: 64px;
+        padding-bottom: 64px;
     }
+   
     
     .rent-img-yaht {
     width: 338px;
     height: 198px;
-    padding-top: 97px;
-    padding-left: 116px; 
+    /* padding-top: 97px;
+    padding-left: 116px;  */
     }
     
     .rent-gratitude{
