@@ -1,13 +1,8 @@
 /* Володимир */
-
-/* Тимчасово */
-
 .yacht-section {
-    background-color: var(--dark-bg);
     padding-top: 146px;
     min-width: 320px;
 }
-
 .yacht-blur-1 {
     width: 255px;
     height: 255px;
@@ -17,7 +12,6 @@
     left: -58px;
     top: -35px;
 }
-
 .yacht-blur-2 {
     width: 195px;
     height: 195px;
@@ -27,13 +21,11 @@
     right: -38px;
     top: -20px;
 }
-
 .yachts-white-spot {
     background-color: #91AFBA;
     opacity: 0.6000000238418579;
     filter: blur(100px);
 }
-
 .yacht-title-block {
     display: flex;
     flex-direction: column;
@@ -41,9 +33,7 @@
     position: relative;
     margin-bottom: 80px;
     z-index: 11;
-
 }
-
 .yacht-title {
     color: var(--white);
 
@@ -54,7 +44,6 @@
     letter-spacing: -0.045em;
     width: 100%;
 }
-
 .yacht-button {
     background-color: rgba(0, 0, 0, 0);
     color: var(--white);
@@ -84,13 +73,7 @@
     gap: 24px;
     border-radius: 24px;
     width: calc(100% - 40px);
-
 }
-
-/* .yacht-card-image {
-        display: block;
-        width: 100%;
-    } */
 .yacht-card-title-row {
     display: flex;
     justify-content: space-between;
@@ -227,14 +210,18 @@
 
     .yacht-spiral {
         stroke: var(--white);
-        fill: var(--white);
+        fill: transparent;
     }
 }
 
 /* .yacht-swiper-button {
-        width: 46px;
-        height: 36px;
-        border-radius: 60px;
-        border: 1px solid var(--white, #F6F5EF);
-        
+    width: 1722.286px;
+    height: 1590.576px;
+    transform: rotate(7.506deg);
+    flex-shrink: 0;
+
+    stroke-width: 1.458px;
+    stroke: #F6F5EF;
+              
+       
     } */
