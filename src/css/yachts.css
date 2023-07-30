@@ -1,9 +1,5 @@
 /* Володимир */
-
-/* Тимчасово */
-
 .yacht-section {
-    background-color: var(--dark-bg);
     padding-top: 146px;
     min-width: 320px;
 }
@@ -41,7 +37,6 @@
     position: relative;
     margin-bottom: 80px;
     z-index: 11;
-
 }
 
 .yacht-title {
@@ -84,13 +79,8 @@
     gap: 24px;
     border-radius: 24px;
     width: calc(100% - 40px);
-
 }
 
-/* .yacht-card-image {
-        display: block;
-        width: 100%;
-    } */
 .yacht-card-title-row {
     display: flex;
     justify-content: space-between;
@@ -227,16 +217,20 @@
 
     .yacht-spiral {
         stroke: var(--white);
-        fill: var(--white);
+        fill: transparent;
     }
 }
 
 /* .yacht-swiper-button {
-        width: 46px;
-        height: 36px;
-        border-radius: 60px;
-        border: 1px solid var(--white, #F6F5EF);
-        
+    width: 1722.286px;
+    height: 1590.576px;
+    transform: rotate(7.506deg);
+    flex-shrink: 0;
+
+    stroke-width: 1.458px;
+    stroke: #F6F5EF;
+              
+       
     } */
 .yacht-swiper-btn {
     background-color: transparent;
