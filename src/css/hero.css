@@ -9,6 +9,7 @@
 }
 
 .hero-button{
+    margin-right: 8px;
     border: none;
     border-radius: 60px;
 background: var(--light-green, #93ABAE);
@@ -76,29 +77,63 @@ letter-spacing: -0.28px;
     width: 48px;
     position: absolute;
 }
-.hero-img:nth-child(2) {
+.hero-img:nth-child(4) {
     top: 22px;
     z-index: 3;
   }
-  .hero-img:nth-child(3) {
+  .hero-img:nth-child(5) {
     top: 22px;
     left: 41px;
     z-index: 2;
   }
-  .hero-img:nth-child(4) {
+  .hero-img:nth-child(6) {
     top: 22px;
     left: 85px;
     z-index: 1;
   }
   .hero-bg-mob{
+    height: 427px;
     position: absolute;
     z-index: -1;
   }
+  /* .hero-bg-desk{ 
+    display: none;} */
+  .hero-filters{
+    top: 0;
+    right: 341px;
+    width: 279px;
+height: 279px;
+transform: rotate(-44.916deg);
+flex-shrink: 0;
+border-radius: 279px;
+opacity: 0.6000000238418579;
+background: #91AFBA;
+filter: blur(100px);
+color: #91AFBA;
+position: absolute;
+z-index: -2;
+  }
+  .hero-filters-bg{
+    width: 279px;
+height: 279px;
+transform: rotate(-44.916deg);
+flex-shrink: 0;
+border-radius: 279px;
+opacity: 0.8999999761581421;
+background: #939CAC;
+filter: blur(100px);
+position: absolute;
+z-index: -2;
+color: #939CAC;
+top: 57px;
+right: 161px;
+  }
   .hero-yacht-img{
     margin-top: 52px;
-    
+    margin-left: 22px;
     width: 287px;
     height: 167px;
+
   }
   .hero-man-img{
     top: 42px;
@@ -109,6 +144,7 @@ letter-spacing: -0.28px;
   }
   
 .hero-clients-title{
+    margin-left: 22px;
     margin-top: 80px;
     color: #11131F;
 font-size: 14px;
@@ -117,6 +153,8 @@ line-height: 110%; /* 15.4px */
 letter-spacing: 0.56px;
 }
 .hero-price {
+    margin-right: 22px;
+    margin-left: 22px;
     margin-top: 18px;
     display: flex;
     align-items: center;
@@ -140,4 +178,64 @@ font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 19.6px */
 letter-spacing: -0.63px;
+}
+@media only screen and (min-width: 768px) {
+    .hero-bg-mob  {
+        
+        width: 426px;
+        height: 596px;
+  }
+.hero-man-img{
+    width: 233px;
+    height: 233px;
+    top: 22px;
+    left: 337px;
+}
+.hero-img{
+    width: 56px;
+    height: 56px;
+}
+.hero-container {
+    gap: 16px;
+}
+.hero-title{
+font-size: 60px;
+font-weight: 500;
+line-height: 110%; /* 66px */
+letter-spacing: -2.7px;
+}
+.hero-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+    max-width: 539px;
+margin-bottom: 16px;}
+.hero-button{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%; /* 19.8px */
+    letter-spacing: -0.81px;}
+    .hero-button-Expl{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 110%; /* 19.8px */
+        letter-spacing: -0.81px;}
+    .hero-section-btn{
+            margin-bottom: 64px;
+        }
+  .hero-yacht-img{
+    width: 378px;
+    height: 221px;
+    margin-top: 111px;
+  }
+  .hero-clients-title{
+font-size: 14px;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+letter-spacing: 0.56px;
+  }
+ .hero-img{
+    margin-bottom: 11px;
+ }
 }
