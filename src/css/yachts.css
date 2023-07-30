@@ -141,12 +141,6 @@
 }
 
 @media (min-width: 375px) {
-    .container {
-        padding: 0 20px;
-        min-width: 375px;
-        max-width: 375px;
-        margin: 0 auto;
-    }
 
     .yacht-title {
         width: 310px;
@@ -162,13 +156,7 @@
 }
 
 @media (min-width: 768px) {
-    .container {
-        padding: 0 32px;
-        min-width: 768px;
-        max-width: 768px;
-        margin: 0 auto;
-    }
-
+    
     .yacht-title-block {
         margin: 0 auto;
         width: 640px;
@@ -191,13 +179,7 @@
 }
 
 @media (min-width: 1280px) {
-    .container {
-        padding: 0 32px;
-        min-width: 1280px;
-        max-width: 1280px;
-        margin: 0 auto;
-    }
-
+    
     .yacht-title-block {
         margin: 0 auto;
         width: 882px;
@@ -214,14 +196,9 @@
     }
 }
 
-/* .yacht-swiper-button {
-    width: 1722.286px;
-    height: 1590.576px;
-    transform: rotate(7.506deg);
-    flex-shrink: 0;
-
-    stroke-width: 1.458px;
-    stroke: #F6F5EF;
-              
-       
-    } */
+.yacht-swiper-button {
+    width: 46px;
+    height: 36px;     
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF); 
+    }
