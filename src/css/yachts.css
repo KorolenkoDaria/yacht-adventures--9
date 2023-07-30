@@ -147,6 +147,21 @@
     gap: 6px;
 }
 
+.yacht-slider-arrow {
+    width: 46px;
+    height: 36px;
+}
+.yacht-slider-button {
+    background-color: transparent;
+    border: none;
+    
+}
+.yacht-slider-button-container {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+}
+
 @media (min-width: 375px) {
 
     .yacht-title {
@@ -185,6 +200,12 @@
     }
 }
 
+@media (max-width: 1279px) {
+    .yacht-spiral {
+        display: none;
+    }
+}
+
 @media (min-width: 1280px) {
     
     .yacht-title-block {
@@ -198,10 +219,12 @@
     }
 
     .yacht-spiral {
-        stroke: var(--white);
-        fill: transparent;
+        background-color: blue;
+        stroke: green;
+        fill: red;
     }
 }
+
 .yacht-swiper-btn {
     background-color: transparent;
     border: none;
