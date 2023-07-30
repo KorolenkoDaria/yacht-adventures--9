@@ -31,5 +31,8 @@
 <path fill="#f6f5ef" style="fill: var(--color1, #f6f5ef)" d="M18.105 12.354l-4.632 3.646 4.632 3.646v-3.015h10.526v-1.263h-10.526v-3.015z"></path>
 <path fill="none" stroke="#f6f5ef" style="stroke: var(--color1, #f6f5ef)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M15.436 0.985h11.234c8.292 0 15.015 6.722 15.015 15.015s-6.722 15.015-15.015 15.015h-11.234c-8.292 0-15.015-6.722-15.015-15.015s6.722-15.015 15.015-15.015z"></path>
 </symbol>
+<symbol id="icon-Mask-group" viewBox="0 0 23 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8889" d="M16 0.444h8.889c8.591 0 15.556 6.964 15.556 15.556s-6.964 15.556-15.556 15.556h-8.889c-8.591 0-15.556-6.964-15.556-15.556s6.964-15.556 15.556-15.556z"></path>
+</symbol>
 </defs>
 </svg>
