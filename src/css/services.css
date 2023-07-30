@@ -52,6 +52,10 @@
 
 @media only screen and (min-width: 768px) {
 
+    .services-list {
+        gap: 32px;
+    }
+
     .services-list-item img {
         max-width: 100%;
         max-height: 100%;
@@ -83,6 +87,8 @@
     .services-button {
         font-size: 18px;
         letter-spacing: -0.81px;
+        left: 32px;
+        bottom: 32px;
     }
 
     .services-section .container::before {
