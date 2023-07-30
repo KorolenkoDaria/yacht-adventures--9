@@ -1,22 +1,4 @@
 /* Наталія */
-
-body {
-    font-family: 'DM Sans', sans-serif;
-    color: var(--white);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    background-color: var(--dark-bg);
-}
-
-body {
-    line-height: 1.4;
-    letter-spacing: -0.28px;
-}
-
-.about-container {}
-
-
 .about-title {
     color: currentColor;
     font-size: 24px;
@@ -35,10 +17,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 1280px) {
-    .about-title {}
-}
-
 .about-span {
     color: var(--light-green);
     font-style: italic;
@@ -53,10 +31,6 @@ body {
         font-size: 32px;
         letter-spacing: -1.44px;
     }
-}
-
-@media only screen and (min-width: 1280px) {
-    .about-span {}
 }
 
 .about-list {
@@ -74,7 +48,10 @@ body {
     }
 }
 
-.about-list-par {}
+.about-list-par {
+    line-height: 1.4;
+    letter-spacing: -0.28px;
+}
 
 @media only screen and (min-width: 768px) {
     .about-list-par {
@@ -83,8 +60,6 @@ body {
         letter-spacing: -0.32px;
     }
 }
-
-.about-text-container {}
 
 @media only screen and (min-width: 1280px) {
     .about-text-container {
@@ -101,10 +76,10 @@ body {
     padding-bottom: 146px;
 }
 
-
 @media only screen and (min-width: 768px) {
     .about-list-yachts {
         max-width: 704px;
+        gap: 32px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -126,25 +101,29 @@ body {
     }
 }
 
-
 @media only screen and (min-width: 768px) {
     .about-list-card-1 {
     width: 704px;
+    height: 631px;
 }
 }
-
 
 @media only screen and (min-width: 1280px){
   .about-list-card-1{
-      width: 553px;
-      transform: translateX(364px);
+      width: 533px;
+      height: 473px;
+      transform: translateX(340px);
   } 
 }
 
+@media only screen and (min-width: 768px) {
+.about-list-card-2 {
+        width: 308px;
+    }
+}
 
 @media only screen and (min-width: 1280px) {
 .about-list-card-2 {
-        width: 335px;
         position: absolute;
         bottom: 95px;
     }
@@ -154,7 +133,7 @@ body {
 width: 260px;
 height: 244px;
 position: absolute;
-bottom: -100px;
+bottom: -122px;
 right: 0;
 }
 
@@ -168,6 +147,6 @@ right: 0;
  @media only screen and (min-width: 1280px) {
 .about-list-card-3 {
         bottom: -112px;
-        left: 363px;
+        left: 340px;
     }
  }
