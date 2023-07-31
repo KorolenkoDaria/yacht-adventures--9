@@ -2,7 +2,7 @@
 .footer-container {
     padding-top: 64px;
     border-top: 1px solid rgba(246, 245, 239, 0.20);
-
+position: relative;
 }
 
 .footer-logo-container {
@@ -63,6 +63,7 @@
 
 .footer-soc-container {
     display: flex;
+    flex-direction: column;
     gap: 14px;
     margin-bottom: 40px;
 }
@@ -110,17 +111,37 @@
     text-transform: uppercase;
     margin-bottom: 16px;
 }
+.footer-fillters{
+    width: 419px;
+height: 419px;
+transform: rotate(-45.565deg);
+flex-shrink: 0;
+border-radius: 419px;
+opacity: 0.6000000238418579;
+background: var(--light-green, #93ABAE);
+filter: blur(100px);
+position: absolute;
+z-index: -1;
+top: 230px;
+right: 115px;
+}
 @media  screen and (min-width:768px) {
     .footer-menu-list {
+        margin-right: 143px;
      align-items: center;
     }
     .footer-container {
         display: flex;
-        flex-direction: column;
+        justify-content: center ;
     }
     .footer-soc-title { 
-        text-align: right;
-        margin-right: 50px;
+        color: var(--white, #F6F5EF);
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%; /* 15.4px */
+        text-transform: uppercase;
     }
     .footer-menu {
         justify-content: center;
@@ -128,13 +149,46 @@
     .icons-list {
     }
     .footer-soc-container {
-        justify-content: right;
+     display: flex;
+     flex-direction: column;
     }
     .footer-logo-container {
+        align-items: normal;
+        margin-right: 130px;
         margin-bottom: 0px;
     }
+    .footer-logo-link{
+        max-width: 167px;
+        color: var(--white, #F6F5EF);
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 118%; /* 21.24px */
+letter-spacing: 0.54px;
+text-transform: uppercase;
+white-space: nowrap;
+    }
+    .footer-menu{
+        color: var(--white, #F6F5EF);
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 118%; /* 16.52px */
+letter-spacing: 0.42px;
+text-transform: uppercase;
+    }
+    .icons-soc{
+        width: 40px;
+        height: 40px;
+    }
+
 } 
 @media  screen and (min-width:1280px) {
+    .footer-container{
+        justify-content: center;
+    }
     .footer-menu-list {
         flex-direction: unset;
         justify-content: center;
@@ -145,5 +199,9 @@
     }
     .footer-soc-title {
         display: flex;
+    }
+    .icons-soc{
+        width: 40px;
+        height: 40px;
     }
 }
