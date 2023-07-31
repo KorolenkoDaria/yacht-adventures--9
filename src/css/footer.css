@@ -15,7 +15,7 @@
 .footer-logo-link {
     color: var(--white, #c2c2c2);
     font-family: DM Sans;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 118%;
@@ -113,6 +113,8 @@
 @media  screen and (min-width:768px) {
     .footer-menu-list {
      align-items: center;
+     justify-content: center;
+     margin-bottom: 0;
     }
     .footer-container {
         display: flex;
@@ -121,6 +123,7 @@
     .footer-soc-title { 
         text-align: right;
         margin-right: 50px;
+
     }
     .footer-menu {
         justify-content: center;
@@ -132,18 +135,24 @@
     }
     .footer-logo-container {
         margin-bottom: 0px;
+        /* position: absolute; */
     }
 } 
 @media  screen and (min-width:1280px) {
     .footer-menu-list {
-        flex-direction: unset;
-        justify-content: center;
     }
     .footer-text-list {
-        margin-top: 132px;
 
     }
     .footer-soc-title {
         display: flex;
+        margin-bottom: 0;
+        justify-content: right;
+    }
+    .footer-menu {
+
+    }
+    .footer-logo-container {
+        /* position: absolute; */
     }
 }
