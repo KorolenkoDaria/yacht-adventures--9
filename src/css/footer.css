@@ -110,3 +110,40 @@
     text-transform: uppercase;
     margin-bottom: 16px;
 }
+@media  screen and (min-width:768px) {
+    .footer-menu-list {
+     align-items: center;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-soc-title { 
+        text-align: right;
+        margin-right: 50px;
+    }
+    .footer-menu {
+        justify-content: center;
+    }
+    .icons-list {
+    }
+    .footer-soc-container {
+        justify-content: right;
+    }
+    .footer-logo-container {
+        margin-bottom: 0px;
+    }
+} 
+@media  screen and (min-width:1280px) {
+    .footer-menu-list {
+        flex-direction: unset;
+        justify-content: center;
+    }
+    .footer-text-list {
+        margin-top: 132px;
+
+    }
+    .footer-soc-title {
+        display: flex;
+    }
+}
