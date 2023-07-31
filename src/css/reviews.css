@@ -56,7 +56,7 @@ body {
 
 .rev-span {
     font-style: italic;
-    color: var(--linear-green);
+    color: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
     font-size: 24px;
     font-weight: 500;
     line-height: 1.2;
@@ -195,11 +195,21 @@ body {
     border-radius: 8px;
 }
 
+@media only screen and (min-width: 768px) {
+.rev-button {
+        width: 68px;
+        height: 68px;
+    }
+}
+
+.rev-button:hover, .rev-button:focus{
+    background-color: #88B3B9;
+}
+
 .rev-button-div{
     display: flex;
     justify-content: flex-end;
 }
-
 
 @media only screen and (min-width: 1280px) {
  .rev-title-div {
