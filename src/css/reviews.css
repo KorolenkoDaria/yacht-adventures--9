@@ -96,22 +96,24 @@ body {
     border-radius: 24px;
     background-color: var(--dark-bg-elements);
     margin-bottom: 43px;
-    max-width: 334px;
-    min-width: 266px;
+    /* max-width: 334px; */
+    /* min-width: 266px; */
+    height: 208px;
 }
 
 @media only screen and (min-width: 768px) {
    .rev-card{
-    max-width: calc((100%-16px)/2);
+    max-width: calc((100% - 16px)/2);
+    height: 266px;
    }
 }
 
 @media only screen and (min-width: 1280px) {
 .rev-card {
-    max-width: calc((100%-32px)/3);
+    max-width: calc((100% - 64px)/3);
+    height: 282px;
     }
 }
-
 
 @media only screen and (min-width: 768px) {
    .rev-list {
@@ -119,6 +121,13 @@ body {
     flex-wrap: wrap;
     gap:16px;
    }
+}
+
+@media only screen and (min-width: 1280px) {
+.rev-list {
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
 }
 
 .rev-img {
