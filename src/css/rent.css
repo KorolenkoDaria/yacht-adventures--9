@@ -1,15 +1,29 @@
 /* Вікторія */
-
 .rent {
-
-}
-
-.rent .rent-container {
+    padding: 80px 0 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .rent-container {
-    padding: 40px 20px;
+    position: relative;
+}
+
+.rent::after {
+    content: "";
+    top: 70%;
+    left: 55%;
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    transform: rotate(-44.916deg);
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    z-index: -1;
+    overflow: hidden;
 }
 
 .rent-title {
@@ -29,6 +43,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    width: 100%;
 }
 
 .rent-field {
@@ -47,13 +62,23 @@
 .rent-input {
     background-color: transparent;
     border: none;
-    height: 16px;
+    height: 33px;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
     color: #F6F5EF;
     font-size: 12px;
     outline: transparent;
+    padding-bottom: 16px;
+
+}
+
+.rent-input::placeholder {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.63px;
+
 }
 
 .textarea-field {
@@ -65,13 +90,21 @@
 .rent-textarea {
     background-color: transparent;
     border: none;
-    height: 58px;
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 75px;
     color: #F6F5EF;
     font-size: 12px;
     outline: transparent;
     resize: none;
+}
+
+.rent-textarea::placeholder {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.63px;
+
 }
 
 .rent-button {
@@ -94,33 +127,14 @@
     cursor: pointer;
 }
 
-.rent-btn-icon {
-
-}
-
-.ellipse {
-    top: 380px;
-    left: 154px;
-    position: absolute;
-    width: 283px;
-    height: 283px;
-    transform: rotate(-44.916deg);
-    border-radius: 283px;
-    flex-shrink: 0;
-    opacity: 0.6000000238418579;
-    background: #91AFBA;
-    filter: blur(100px);
-    z-index: -1;
-}
-
 @media only screen and (min-width: 768px) {
-    .rent-container {
-        padding: 50px 32px;
-        display: flex;
+    .rent {
+        padding: 100px 0 100px;
     }
 
-    .rent-block {
-        margin-right: 53px;
+    .rent-container {
+        display: flex;
+        gap: 81px;
     }
 
     .rent-title {
@@ -136,8 +150,25 @@
     }
 
     .rent-form {
-        min-width: 364px;
         gap: unset;
+    }
+
+    .rent::after {
+        top: 20%;
+        width: 413px;
+        height: 413px;
+        left: auto;
+        width: 413px;
+        height: 413px;
+        right: -20%;
+        filter: blur(200px);
+    }
+
+    .rent-input::placeholder {
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.72px;
+
     }
 
     .rent-field {
@@ -169,8 +200,13 @@
 }
 
 @media only screen and (min-width: 1280px) {
+
+    .rent {
+        padding: 164px 0 164px;
+    }
+
     .rent-container {
-        padding: 82px 183px 82px 184px;
+        gap: 188px;
     }
 
     .rent-block {
