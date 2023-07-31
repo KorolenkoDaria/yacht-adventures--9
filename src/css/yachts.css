@@ -1,6 +1,7 @@
 /* Володимир */
 .yacht-section {
     padding-top: 146px;
+    padding-bottom: 40px;
     min-width: 320px;
 }
 
@@ -71,11 +72,6 @@
     margin: 0 auto;
     
 }
-.yacht-slider-wrapper {
-    display: flex;
-    gap: 16px;
-    margin: 0 auto;
-}
 .yacht-card {
     background-color: var(--dark-bg-elements);
     padding: 18px;
@@ -84,6 +80,7 @@
     gap: 24px;
     border-radius: 24px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .yacht-card-title-row {
@@ -220,9 +217,9 @@
     .yacht-spiral {
         display: none;
     }
-    .yacht-card:nth-child(n+2) {
+    /* .yacht-card:nth-child(1n + 2) {
         display: none;
-    }
+    } */
 }
 
 @media (min-width: 1280px) {
