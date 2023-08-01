@@ -1,6 +1,7 @@
 <!-- Вікторія -->
 
 <section class="rent">
+    <div class="rent-blur"></div>
     <div class="container rent-container">
         <div class="rent-block">
             <h2 class="rent-title">Rent a yacht now</h2>
@@ -11,15 +12,20 @@
         <form class="rent-form">
             <div class="rent-field">
                 <label for="user-name" class="rent-label"></label>
-                <input type="text" class="rent-input" name="user-name" id="user-name" placeholder="Full Name" />
+                <input type="text" class="rent-input" name="user-name" id="user-name" placeholder="Full Name"
+                    pattern="@^([А-Я]{1}[а-яё]{1,23}|[A-Z]{1}[a-z]{1,23})$@gm"
+                    title="Ваші ім'я та фамілія з великих літер" />
             </div>
             <div class="rent-field">
                 <label for="user-email" class="rent-label"></label>
-                <input type="email" class="rent-input" name="user-email" id="user-email" placeholder="Email" />
+                <input type="email" class="rent-input" name="user-email" id="user-email" placeholder="Email"
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                    title="Електронна адреса повинна містити знак @" />
             </div>
             <div class="rent-field">
                 <label for="user-phone" class="rent-label"></label>
-                <input type="tel" class="rent-input" name="user-phone" id="user-phone" placeholder="Phone number" />
+                <input type="tel" class="rent-input" name="user-phone" id="user-phone" placeholder="Phone number"
+                    pattern="^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Номер починається з коду країни" />
             </div>
             <div class="textarea-field">
                 <label for="user-comment" class="rent-label"></label>

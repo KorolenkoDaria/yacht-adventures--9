@@ -2,22 +2,30 @@
 .rent {
     padding: 80px 0 80px;
     position: relative;
-    overflow: hidden;
 }
 
 .rent-container {
     position: relative;
 }
 
+.rent-blur {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 270px);
+    pointer-events: none;
+    overflow-x: hidden;
+}
 
-.rent-container::after {
+.rent-blur::after {
     content: "";
-    top: 70%;
-    left: 55%;
+    bottom: 270px;
+    right: 0;
     position: absolute;
     width: 283px;
     height: 283px;
-    transform: rotate(-44.916deg);
+    transform: translateX(50%);
     border-radius: 50%;
     flex-shrink: 0;
     opacity: 0.6000000238418579;
