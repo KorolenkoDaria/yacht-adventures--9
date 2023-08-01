@@ -1,26 +1,31 @@
 /* Марія */
-.rent-container {
-    padding: 40px 24px 40px 24px;
 
-
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
+.modal-rent-container {
+    padding: 40px 24px 40px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
 
 .rent-backdrop {
     position: fixed;
-    top: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 100%;
     left: 0;
-    width: 335px;
-    height: 396px;
-    border-radius: 40px;
-    background: #1F212D;
-    z-index: 999;
-    opacity: 100%;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .rent-backdrop .rent-is-hidden {
     visibility: hidden;
@@ -28,15 +33,12 @@
     pointer-events: none;
 }
 
-
-
 .rent-modal-window {
     width: 335px;
     height: 396px;
     border-radius: 20px;
     background: #1F212D;
 }
-
 
 .rent-modal-button {
     padding: 0;
@@ -50,19 +52,13 @@
     border: none;
     top: 14px;
     right: 14px;
-
-
 }
-
 
 .rent-svg {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-
 }
-
-
 
 .shadow {
     top: 32px;
@@ -82,13 +78,8 @@
     width: 287px;
     height: 149px;
     flex-shrink: 0;
-    /* padding-top: 40px;
-padding-left: 24px; */
     display: block;
-
 }
-
-
 
 .rent-gratitude {
     color: var(--white);
@@ -99,7 +90,6 @@ padding-left: 24px; */
     letter-spacing: -1.08px;
     margin-top: 24px;
 }
-
 
 .rent-gratitude-paragraph {
     color: var(--white);
@@ -127,13 +117,12 @@ padding-left: 24px; */
         z-index: 1000;
     }
 
-    .rent-container {
+    .modal-rent-container {
         padding-top: 97px;
         padding-left: 64px;
         padding-right: 64px;
         padding-bottom: 64px;
     }
-
 
     .rent-modal-window {
 
@@ -143,32 +132,18 @@ padding-left: 24px; */
     }
 
     .rent-modal-button {
-
         top: 32px;
         left: 524px;
-
     }
 
     .rent-gratitude-paragraph {
         margin-top: 16px;
     }
 
-
-    .rent-text {
-
-        /* padding-left: 64px; */
-        /* padding-top: 21px; */
-
-
-
-
-    }
-
     .rent-img-yaht {
         width: 338px;
         height: 198px;
         margin: auto;
-
     }
 
     .rent-gratitude {
@@ -180,7 +155,6 @@ padding-left: 24px; */
         font-size: 16px;
     }
 }
-
 
 @media only screen and (min-width: 1280px) {
     .rent-modal-window {
@@ -196,19 +170,16 @@ padding-left: 24px; */
         left: 524px;
     }
 
-    .rent-container {
+    .modal-rent-container {
         padding-top: 97px;
         padding-left: 64px;
         padding-right: 64px;
         padding-bottom: 64px;
     }
 
-
     .rent-img-yaht {
         width: 338px;
         height: 198px;
-        /* padding-top: 97px;
-    padding-left: 116px;  */
     }
 
     .rent-gratitude {
@@ -218,6 +189,4 @@ padding-left: 24px; */
     .rent-gratitude-paragraph {
         font-size: 16px;
     }
-
-
 }
