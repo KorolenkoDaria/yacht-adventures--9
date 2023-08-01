@@ -1,1 +1,235 @@
 /* Вікторія */
+.rent {
+    padding: 80px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rent-container {
+    position: relative;
+}
+
+.rent-container::after {
+    content: "";
+    top: 70%;
+    left: 55%;
+    position: absolute;
+    width: 283px;
+    height: 283px;
+    transform: rotate(-44.916deg);
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.rent-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.62px;
+    margin-bottom: 16px;
+}
+
+.rent-img {
+    margin-bottom: 40px;
+    width: 259px;
+}
+
+.rent-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.rent-field {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F5EF;
+}
+
+.rent-label {
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.63px;
+}
+
+
+.rent-input {
+    background-color: transparent;
+    border: none;
+    height: 33px;
+    width: 100%;
+    color: #F6F5EF;
+    font-size: 12px;
+    outline: transparent;
+    padding-bottom: 16px;
+
+}
+
+.rent-input::placeholder {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.63px;
+
+}
+
+.textarea-field {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F5EF;
+}
+
+.rent-textarea {
+    background-color: transparent;
+    border: none;
+    height: 75px;
+    color: #F6F5EF;
+    font-size: 12px;
+    outline: transparent;
+    resize: none;
+}
+
+.rent-textarea::placeholder {
+    color: var(--white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.63px;
+
+}
+
+.rent-button {
+    display: flex;
+    padding: 14px 28px;
+    gap: 16px;
+    color: var(--white);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.63px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    max-width: 123px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .rent {
+        padding: 100px 0 100px;
+    }
+
+    .rent-container {
+        display: flex;
+        gap: 81px;
+    }
+
+    .rent-title {
+        font-size: 60px;
+        letter-spacing: -1.7px;
+        margin-bottom: 32px;
+        max-width: 287px;
+    }
+
+    .rent-img {
+        margin-bottom: unset;
+        width: 271px;
+    }
+
+    .rent-form {
+        gap: unset;
+    }
+
+    .rent-container::after {
+        top: 20%;
+        width: 413px;
+        height: 413px;
+        left: auto;
+        width: 413px;
+        height: 413px;
+        right: -20%;
+        filter: blur(200px);
+    }
+
+    .rent-input::placeholder {
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.72px;
+
+    }
+
+    .rent-field {
+        margin-bottom: 28px;
+    }
+
+    .rent-label {
+        font-size: 16px;
+        letter-spacing: -0.72px;
+    }
+
+    .textarea-field {
+        margin-bottom: 32px;
+    }
+
+    .rent-button {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+        max-width: 132px;
+    }
+
+    .ellipse {
+        top: 40px;
+        left: 538px;
+        width: 413px;
+        height: 413px;
+        border-radius: 413px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .rent {
+        padding: 164px 0 164px;
+    }
+
+    .rent-container {
+        gap: 188px;
+    }
+
+    .rent-block {
+        margin-right: 188px;
+    }
+
+    .rent-title {
+        margin-bottom: 64px;
+        max-width: 282px;
+        letter-spacing: -2.7px;
+    }
+
+    .rent-img {
+        width: 282px;
+        height: 191px;
+    }
+
+    .rent-form {
+        min-width: 443px;
+    }
+
+    .textarea-field {
+        margin-bottom: 64px;
+    }
+
+}
