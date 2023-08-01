@@ -226,20 +226,15 @@
         padding-bottom: 16px;
     }
 
-    .footer-menu-list {}
-
-    .footer-text-list {}
+    .footer-menu-list {
+        flex-direction: row;
+        gap: 24px;
+    }
 
     .footer-soc-title {
         display: flex;
         margin-bottom: 0;
         justify-content: right;
-    }
-
-    .footer-menu {}
-
-    .footer-logo-container {
-        /* position: absolute; */
     }
 
     .icons-soc {

@@ -7,6 +7,7 @@
 .hero-container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .hero-button {
@@ -387,12 +388,10 @@
     left: 157px;
   }
 
-  .hero-section::after {
+  .hero-container::after {
     content: "";
     width: 414px;
     height: 414px;
-    transform: rotate(-45.074deg);
-    flex-shrink: 0;
     border-radius: 50%;
     opacity: 0.8999999761581421;
     background: #939CAC;
@@ -400,8 +399,8 @@
     position: absolute;
     z-index: -2;
     color: #939CAC;
-    top: 57px;
-    right: 161px;
+    bottom: 0;
+    left: -103px;
   }
 
 }

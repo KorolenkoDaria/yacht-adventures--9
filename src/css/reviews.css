@@ -1,4 +1,7 @@
 /* Дмитро */
+.rev {
+    padding-bottom: 184px;
+}
 
 .rev-img-wrap {
     width: 48px;
@@ -112,7 +115,7 @@ picture.rev-img {
     .rev-card {
         width: calc((100% - 64px)/3);
 
-        padding: 6px 32px 32px 32px;
+        padding: 32px;
     }
 }
 
@@ -187,6 +190,10 @@ picture.rev-img {
     background-color: var(--light-green);
     border: none;
     border-radius: 8px;
+    position: fixed;
+    right: 32px;
+    bottom: 332px;
+    z-index: 100000;
 }
 
 @media only screen and (min-width: 768px) {

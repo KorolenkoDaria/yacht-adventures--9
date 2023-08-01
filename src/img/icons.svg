@@ -29,5 +29,8 @@
 <path fill="#f6f5ef" style="fill: var(--color1, #f6f5ef)" d="M18.105 12.354l-4.632 3.646 4.632 3.646v-3.015h10.526v-1.263h-10.526v-3.015z"></path>
 <path fill="none" stroke="#f6f5ef" style="stroke: var(--color1, #f6f5ef)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M15.436 0.985h11.234c8.292 0 15.015 6.722 15.015 15.015s-6.722 15.015-15.015 15.015h-11.234c-8.292 0-15.015-6.722-15.015-15.015s6.722-15.015 15.015-15.015z"></path>
 </symbol>
+<symbol id="icon-up" viewBox="0 0 17 32">
+<path fill="#f6f5ef" style="fill: var(--color1, #f6f5ef)" d="M0 9.778l8.533-9.778 8.533 9.778h-7.055v22.222h-2.957v-22.222h-7.055z"></path>
+</symbol>
 </defs>
 </svg>
