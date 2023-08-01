@@ -32,5 +32,8 @@
 <symbol id="icon-up" viewBox="0 0 17 32">
 <path fill="#f6f5ef" style="fill: var(--color1, #f6f5ef)" d="M0 9.778l8.533-9.778 8.533 9.778h-7.055v22.222h-2.957v-22.222h-7.055z"></path>
 </symbol>
+<symbol id="icon-Mask-group" viewBox="0 0 23 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8889" d="M16 0.444h8.889c8.591 0 15.556 6.964 15.556 15.556s-6.964 15.556-15.556 15.556h-8.889c-8.591 0-15.556-6.964-15.556-15.556s6.964-15.556 15.556-15.556z"></path>
+</symbol>
 </defs>
 </svg>
