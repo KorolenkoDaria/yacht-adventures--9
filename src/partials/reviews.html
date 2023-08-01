@@ -1,6 +1,6 @@
 <!-- Дмитро -->
-<section>
-  <div class="container">
+<section class="rev">
+  <div class="container rev-container">
     <div class="rev-title-div">
       <h2 class="rev-title">
         <span class="rev-span">Yacht Adventures</span> take pride in providing
@@ -15,13 +15,19 @@
 
     <ul class="rev-list">
       <li class="rev-card">
-        <img
-          class="rev-img"
-          src="./img/reviews/reviews_avatar_01@1x.webp"
-          alt="John Wax"
-          width="96"
-          height="96"
-        />
+        <div class="rev-img-wrap">
+          <picture class="rev-img">
+            <source media="(min-width: 768px)" srcset="
+                ./img/reviews/reveiws-avatar-01@1x.webp 1x,
+                ./img/reviews/reveiws-avatar-01@2x.webp 2x
+              " type="image/webp" />
+            <source media="(max-width: 767px)" srcset="
+            ./img/reviews/reveiws-avatar-mob-01@1x.webp 1x,
+            ./img/reviews/reveiws-avatar-mob-01@2x.webp 2x
+              " type="image/webp" />
+            <img src="./img/reviews/reveiws-avatar-01@1x.webp" alt="Avatar" width="56" height="56" />
+          </picture>
+        </div>
         <h3 class="rev-list-title">John Wax</h3>
         <p class="rev-review-paragr">
           I rented the Lagoon 620 with my family for a week-long vacation and it
@@ -30,13 +36,19 @@
         </p>
       </li>
       <li class="rev-card">
-        <img
-          class="rev-img"
-          src="./img/reviews/reviews_avatar_02@1x.webp"
-          alt="Victoria Romashenko"
-          width="96"
-          height="96"
-        />
+        <div class="rev-img-wrap">
+          <picture class="rev-img">
+            <source media="(min-width: 768px)" srcset="
+                ./img/reviews/reveiws-avatar-02@1x.webp 1x,
+                ./img/reviews/reveiws-avatar-02@2x.webp 2x
+              " type="image/webp" />
+            <source media="(max-width: 767px)" srcset="
+            ./img/reviews/reveiws-avatar-mob-02@1x.webp 1x,
+            ./img/reviews/reveiws-avatar-mob-02@2x.webp 2x
+              " type="image/webp" />
+            <img src="./img/reviews/reveiws-avatar-02@1x.webp" alt="Avatar" width="56" height="56" />
+          </picture>
+        </div>
         <h3 class="rev-list-title">Victoria Romashenko</h3>
         <p class="rev-review-paragr">
           The Sunseeker Manhattan 66 was the perfect choice for our romantic
@@ -45,13 +57,19 @@
         </p>
       </li>
       <li class="rev-card">
-        <img
-          class="rev-img"
-          src="../img/reviews/reviews_avatar_03@1x.webp"
-          alt="Victoria Romashenko"
-          width="96"
-          height="96"
-        />
+        <div class="rev-img-wrap">
+          <picture class="rev-img">
+            <source media="(min-width: 768px)" srcset="
+                ./img/reviews/reveiws-avatar-03@1x.webp 1x,
+                ./img/reviews/reveiws-avatar-03@2x.webp 2x
+              " type="image/webp" />
+            <source media="(max-width: 767px)" srcset="
+            ./img/reviews/reveiws-avatar-mob-03@1x.webp 1x,
+            ./img/reviews/reveiws-avatar-mob-03@2x.webp 2x
+              " type="image/webp" />
+            <img src="./img/reviews/reveiws-avatar-03@1x.webp" alt="Avatar" width="56" height="56" />
+          </picture>
+        </div>
         <h3 class="rev-list-title">Ihor Trachuk</h3>
         <p class="rev-review-paragr">
           The Azimut 80 was the most luxurious yacht I've ever been on. The
