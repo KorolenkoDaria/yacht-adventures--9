@@ -18,7 +18,10 @@
 }
 
 .about-span {
-    color: var(--light-green);
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-style: italic;
     font-size: 24px;
     font-weight: 500;
