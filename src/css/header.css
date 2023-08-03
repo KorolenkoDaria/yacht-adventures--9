@@ -27,7 +27,6 @@
 }
 
 .header-menu-logo-mobil {
-  /* justify-content: space-between; */
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(246, 245, 239, 0.20);
@@ -91,7 +90,6 @@
 .header-toggle {
   height: 24px;
   width: 24px;
-
   align-items: center;
   justify-content: flex-end;
   background-color: transparent;
