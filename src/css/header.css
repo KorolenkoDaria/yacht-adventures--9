@@ -1,10 +1,8 @@
 /* -------------------------- Роман ----------------------------*/
-.container {
-  padding: 0;
-}
 
-.header-studio {
-  height: 72px;
+
+.header-studio.is-open {
+  transform: translateX(0);
 }
 
 .header-menu {
@@ -26,10 +24,8 @@
 }
 
 .header-menu-logo-mobil {
-  /* justify-content: space-between; */
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+  position: relative;
 }
 
 .header-menu-past {
@@ -105,6 +101,10 @@
   .header-toggle {
     display: none;
   }
+
+  .header-container {
+    display: none;
+  }
 }
 
 .header-toggle-icon {
@@ -143,6 +143,7 @@
 
 .header-menu-logo-img {
   margin-right: 8px;
+  width: 23px;
 }
 
 .header-container .header-toggle {
@@ -164,22 +165,22 @@
 }
 
 .header-container-clouse {
-  width: 24px;
-  height: 20px;
   justify-content: end;
+  padding: 0;
+  line-height: 0;
 }
 
 .header-toggle-modal {
+  position: absolute;
   height: 24px;
-  width: 0;
-  padding-left: 120px;
-  align-items: center;
+  width: 20px;
   top: 24px;
   right: 20px;
   justify-content: center;
   background-color: transparent;
   border: none;
   outline: none;
+
 }
 
 .header-mobile-menu-link:not(:last-child) {
@@ -197,7 +198,6 @@
 .header-element-one {
   width: 279px;
   height: 279px;
-  transform: rotate(-44.916deg);
   flex-shrink: 0;
   border-radius: 279px;
   opacity: 0.8999999761581421;
@@ -208,7 +208,6 @@
 .header-element-two {
   width: 279px;
   height: 279px;
-  transform: rotate(-44.916deg);
   flex-shrink: 0;
   border-radius: 279px;
   opacity: 0.8999999761581421;
@@ -220,7 +219,6 @@
   content: "";
   width: 279px;
   height: 279px;
-  transform: rotate(-44.916deg);
   border-radius: 279px;
   opacity: 0.6000000238418579;
   background: #91AFBA;
@@ -234,7 +232,6 @@
   content: "";
   width: 279px;
   height: 279px;
-  transform: rotate(-44.916deg);
   border-radius: 279px;
   opacity: 0.6000000238418579;
   background: #91AFBA;
