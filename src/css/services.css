@@ -1,7 +1,14 @@
 /* Влад  */
+
 .services-section .container {
     position: relative;
 }
+
+.services-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .services-list {
     display: flex;
     flex-direction: column;
@@ -51,6 +58,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .services-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
     .services-list {
         gap: 32px;
@@ -73,13 +84,13 @@
 
     .services-list-item.fishing {
         align-self: end;
-    } 
+    }
 
     .services-list-item.sunbathing img {
         width: 380px;
         height: 352px;
     }
-    
+
     .services-list-item.sunbathing {
         margin-left: 32px;
     }
@@ -100,7 +111,12 @@
         left: calc((-414px / 2) - 32px);
     }
 }
+
 @media only screen and (min-width: 1280px) {
+    .services-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
 
     .services-list-item.diving img {
         width: 712px;
@@ -116,7 +132,7 @@
         width: 436px;
         height: 352px;
     }
-    
+
     .services-list {
         display: flex;
         flex-direction: row;

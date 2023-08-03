@@ -2,13 +2,14 @@
 
 .yacht-section {
     position: relative;
-    padding-bottom: 140px;
+    padding-bottom: 76px;
 }
 
 .yacht-section::before {
     content: "";
     width: 195px;
     height: 195px;
+    border-radius: 50%;
     flex-shrink: 0;
     position: absolute;
     right: 0;
@@ -18,10 +19,11 @@
     filter: blur(100px);
 }
 
-.yacht-conteiner::after {
+.yacht-section::after {
     content: "";
     width: 255px;
     height: 255px;
+    border-radius: 50%;
     flex-shrink: 0;
     position: absolute;
     left: -58px;
@@ -55,21 +57,21 @@
 }
 
 .yacht-button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--white);
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.63px;
-    border-radius: 60px;
-    border: 1px solid var(--white);
     width: 131px;
     height: 43px;
-
+    border-radius: 60px;
+    border: 1px solid var(--white);
+    ransition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .yacht-slider {
@@ -77,16 +79,19 @@
 
 }
 
-.yacht-card {
+.yacht-item {
     background-color: var(--dark-bg-elements);
     padding: 18px 18px 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
     border-radius: 24px;
-    width: 100%;
-
 }
+
+@media (max-width: 768px) {
+    .yacht-item {
+        padding: 16px 16px 32px;
+    }
+}
+
+
 
 .yacht-card-char li {
     text-transform: uppercase;
@@ -96,6 +101,14 @@
     display: flex;
     justify-content: space-between;
     padding: 0 6px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .yacht-card-title-row {
+
+        margin-bottom: 32px;
+    }
 }
 
 .yachts-card-title {
@@ -130,6 +143,16 @@
     line-height: 1.18;
     letter-spacing: 0.03;
 
+}
+
+.yacht-card-image {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 375px) {
+    .yacht-card-image {
+        margin-bottom: 32px;
+    }
 }
 
 .yacht-card-dates {
@@ -184,10 +207,6 @@
         width: 310px;
     }
 
-    .yacht-card {
-        width: 335px;
-    }
-
     .yacht-card-image {
         width: 100%;
     }
@@ -200,6 +219,9 @@
 }
 
 @media (min-width: 768px) {
+    .yacht-section {
+        padding-bottom: 86px;
+    }
 
     .yacht-title-block {
         margin: 0 auto 100px auto;
@@ -215,11 +237,6 @@
         font-size: 18px;
         width: 153px;
         height: 48px;
-
-    }
-
-    .yacht-card {
-        width: 344px;
     }
 }
 
@@ -241,27 +258,16 @@
 
     }
 
-    .yacht-card {
-        width: 354px;
-    }
-
-    .yacht-card:nth-child(n+3) {
-        display: none;
-    }
 }
 
 @media (min-width: 1280px) {
+
     .yacht-section {
         padding-bottom: 82px;
-        /* background-image: url(../img/yachts/yacht-spiral@1x.png);
-        background-repeat: no-repeat;
-        /* background-size:auto; */
-        /* background-position: center; */
-
     }
 
     .yacht-section::before {
-        right: 0;
+        right: 30%;
         top: 20px;
     }
 
@@ -280,6 +286,12 @@
         width: 882px;
 
     }
+
+    .yacht-button:hover,
+    .yacht-button:focus {
+        border-color: var(--light-green);
+        color: var(--light-green);
+    }
 }
 
 .yacht-slider-box {
@@ -291,12 +303,11 @@
     height: 1611.22px;
     position: absolute;
     top: -100%;
-    left: 0;
+    right: 0;
     transform: rotate(2.3deg);
-    opacity: 0.35;
+    opacity: 0.4736842215061188;
     background-color: transparent;
     z-index: -1;
-    max-width: 100%;
 }
 
 .yacht-slider {
@@ -320,4 +331,80 @@
 
 .new {
     fill: var(--white);
+}
+
+/* slider */
+
+.swiper {
+    .swiper {
+        width: 320px;
+        height: 469px;
+    }
+}
+
+@media (min-width: 375px) {
+    .swiper {
+        width: 335px;
+        height: 469px;
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        width: 704px;
+        height: 508px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .swiper {
+        width: 1094px;
+        height: 508px;
+    }
+}
+
+.swiper-button-prev {
+    width: 46px;
+    height: 36px;
+    left: 115px;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .swiper-button-prev {
+        width: 50px;
+        left: 294px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .swiper-button-prev {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.swiper-button-next {
+    width: 46px;
+    height: 36px;
+    right: 115px;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .swiper-button-next {
+        width: 50px;
+        right: 294px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .swiper-button-next {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

@@ -1,8 +1,5 @@
 /* -------------------------- Роман ----------------------------*/
 
-.header-studio {
-  height: 72px;
-}
 
 .header-studio.is-open {
   transform: translateX(0);
@@ -27,8 +24,6 @@
 }
 
 .header-menu-logo-mobil {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid rgba(246, 245, 239, 0.20);
   position: relative;
 }
@@ -170,21 +165,22 @@
 }
 
 .header-container-clouse {
-  width: 24px;
-  height: 20px;
   justify-content: end;
+  padding: 0;
+  line-height: 0;
 }
 
 .header-toggle-modal {
+  position: absolute;
   height: 24px;
-  width: 0;
+  width: 20px;
   top: 24px;
   right: 20px;
   justify-content: center;
   background-color: transparent;
   border: none;
   outline: none;
-  position: absolute;
+
 }
 
 .header-mobile-menu-link:not(:last-child) {

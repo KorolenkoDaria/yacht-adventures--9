@@ -1,6 +1,6 @@
 /* Вікторія */
 .rent {
-    padding: 80px 0 80px;
+    padding: 40px 0 40px;
     position: relative;
 }
 
@@ -138,7 +138,7 @@
 
 @media only screen and (min-width: 768px) {
     .rent {
-        padding: 100px 0 100px;
+        padding: 50px 0 50px;
     }
 
     .rent-container {
@@ -211,7 +211,7 @@
 @media only screen and (min-width: 1280px) {
 
     .rent {
-        padding: 164px 0 164px;
+        padding: 82px 0 82px;
     }
 
     .rent-container {

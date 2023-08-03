@@ -1,6 +1,6 @@
 /* Богдан */
 .hero-section {
-  padding: 40px 0 80px;
+  padding: 40px 0 40px;
   position: relative;
 }
 
@@ -25,6 +25,7 @@
   padding: 14px 28px;
   width: 130px;
   height: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -53,6 +54,7 @@
   width: 117px;
   height: 48px;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-title {
@@ -236,6 +238,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-section {
+    padding: 64px 0 50px;
+  }
+
   .hero-bg-mob {
     width: 426px;
     height: 596px;
@@ -347,23 +353,22 @@
 
 @media only screen and (min-width: 1280px) {
   .hero-section {
-    padding-top: 0;
+    padding-bottom: 82px;
   }
 
   .hero-container {
     display: flex;
     flex-direction: row;
     gap: 236px;
+    align-items: center;
   }
 
   .hero-block-wrap {
     order: 2;
-    margin-top: 132px;
   }
 
   .hero-yacht {
     margin: 0;
-    margin-top: 64px;
   }
 
   .hero-title {

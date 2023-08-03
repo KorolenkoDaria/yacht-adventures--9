@@ -1,35 +1,32 @@
-// $('.responsive').slick({
-//     dots: true,
-//     infinite: false,
-//     speed: 300,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     responsive: [
-//       {
-//         breakpoint: 1280,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//           dots: true
-//         }
-//       },
-//       {
-//         breakpoint: 768,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 320,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1
-//         }
-//       }
-//       // You can unslick at a given breakpoint now by adding:
-//       // settings: "unslick"
-//       // instead of a settings object
-//     ]
-//   });
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+
+const swiper = new Swiper('.yacht-slider', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 16,
+    modules: [Navigation],
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 16
+        },
+        1280: {
+            slidesPerView: 3,
+            spaceBetween: 16
+        },
+    }
+});
+
+// let next = document.querySelector(".swiper-button-next");
+// next.addEventListener("click", swiper.slideNext());

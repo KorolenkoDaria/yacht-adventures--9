@@ -1,6 +1,21 @@
 /* Дмитро */
 .rev {
-    padding-bottom: 184px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .rev {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .rev {
+        padding-bottom: 82px;
+        padding-top: 82px;
+    }
 }
 
 .rev-img-wrap {
@@ -104,6 +119,10 @@ picture.rev-img {
     background-color: var(--dark-bg-elements);
 }
 
+.rev-card:not(:first-child) {
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
     .rev-card {
         width: calc((100% - 16px)/2);
@@ -180,6 +199,7 @@ picture.rev-img {
         letter-spacing: -0.32px;
         /* margin-left: 20px;
         margin-right: 20px; */
+
     }
 }
 
@@ -194,6 +214,7 @@ picture.rev-img {
     right: 32px;
     bottom: 332px;
     z-index: 100000;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,4 +240,6 @@ picture.rev-img {
         justify-content: space-between;
         margin-bottom: 64px;
     }
+
+
 }

@@ -1,4 +1,14 @@
 /* Наталія */
+.about-sect-style {
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-sect-style {
+        padding-top: 50px;
+    }
+}
+
 .about-title {
     color: currentColor;
     font-size: 24px;
