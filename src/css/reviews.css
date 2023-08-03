@@ -117,6 +117,7 @@ picture.rev-img {
     padding: 24px 14px;
     border-radius: 24px;
     background-color: var(--dark-bg-elements);
+    margin-bottom: 14px;
 }
 
 .rev-card:not(:first-child) {
@@ -128,6 +129,11 @@ picture.rev-img {
         width: calc((100% - 16px)/2);
 
     }
+
+    .rev-card:not(:last-child) {
+        display: block;
+    }
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -135,6 +141,10 @@ picture.rev-img {
         width: calc((100% - 64px)/3);
 
         padding: 32px;
+    }
+
+    .rev-card:not(:first-child) {
+        display: block;
     }
 }
 
@@ -242,4 +252,32 @@ picture.rev-img {
     }
 
 
+}
+
+.dots-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.dots-list-item {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+
+}
+
+.dots-list-item:first-child {
+    background-color: #88B3B9;
+}
+
+.dots-list-item:not(:first-child) {
+    background-color: #1F212D;
+}
+
+@media only screen and (min-width: 1280px) {
+    .dots-list {
+        display: none;
+    }
 }
