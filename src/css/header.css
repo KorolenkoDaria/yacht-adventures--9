@@ -1,0 +1,245 @@
+/* -------------------------- Роман ----------------------------*/
+.container {
+  padding: 0;
+}
+
+.header-studio {
+  height: 72px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+}
+
+.header-logo-img {
+  margin-right: 8px;
+  width: 25px;
+  height: 25px;
+}
+
+.header-menu-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-logo-mobil {
+  /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(246, 245, 239, 0.20);
+}
+
+.header-menu-past {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-menu-past {
+    display: none;
+  }
+}
+
+.header-weblogo {
+  padding: 28px 0;
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.header-weblogo-mobil {
+  padding: 28px 0;
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-weblogo {
+    padding: 33px 0;
+    line-height: 1.18;
+    letter-spacing: 0.54px;
+    font-size: 18px;
+  }
+}
+
+.header-title {
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 35px 0;
+}
+
+.header-toggle {
+  height: 24px;
+  width: 24px;
+
+  align-items: center;
+  justify-content: flex-end;
+  background-color: transparent;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .header-toggle {
+    display: none;
+  }
+}
+
+.header-toggle-icon {
+  fill: #F6F5EF;
+}
+
+.header-color {
+  color: #F6F5EF;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  background: var(--dark-bg);
+  overflow: hidden;
+}
+
+.header-container.is-open {
+  transform: translateX(0);
+}
+
+.header-menu-logo-img {
+  margin-right: 8px;
+}
+
+.header-container .header-toggle {
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.header-mobile-menu {
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-mobile-menu .link {
+  display: block;
+  text-decoration: none;
+}
+
+.header-container-clouse {
+  width: 24px;
+  height: 20px;
+  justify-content: end;
+}
+
+.header-toggle-modal {
+  height: 24px;
+  width: 0;
+  padding-left: 120px;
+  align-items: center;
+  top: 24px;
+  right: 20px;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header-mobile-menu-link:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.header-wrap {
+  width: 375px;
+  height: 812px;
+  background: #11131F;
+  margin: auto;
+  display: flex;
+}
+
+.header-element-one {
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.8999999761581421;
+  background: #939CAC;
+  filter: blur(100px);
+}
+
+.header-element-two {
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.8999999761581421;
+  background: #939CAC;
+  filter: blur(100px);
+}
+
+.header-container::before {
+  content: "";
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  border-radius: 279px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  position: absolute;
+  left: -206px;
+  bottom: -57px;
+}
+
+.header-container::after {
+  content: "";
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  border-radius: 279px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  position: absolute;
+  bottom: -197px;
+  right: -72px;
+}
