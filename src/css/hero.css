@@ -1,1 +1,415 @@
 /* Богдан */
+.hero-section {
+  padding: 40px 0 40px;
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-button {
+  margin-right: 8px;
+  border: none;
+  border-radius: 60px;
+  background: var(--light-green, #93ABAE);
+  color: var(--white, #F6F5EF);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  padding: 14px 28px;
+  width: 130px;
+  height: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.hero-section-btn {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-button-Expl {
+  display: block;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 1px solid var(--white, #F6F5EF);
+  padding: 14px 28px;
+  color: var(--white, #F6F5EF);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  width: 117px;
+  height: 48px;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  margin-bottom: 14px;
+}
+
+
+.hero-luxury {
+  background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.28px;
+}
+
+.hero-yacht {
+  max-width: 100%;
+  background-image: url(../img/hero/hero-bg-mob@1x.webp);
+  background-size: 100% 100%;
+  height: 427px;
+  margin: 0 auto;
+  padding: 85px 24px 48px;
+  position: relative;
+}
+
+.hero-yacht::before {
+  content: "";
+  top: 0;
+  right: 341px;
+  width: 279px;
+  height: 279px;
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.6000000238418579;
+  background: #91AFBA;
+  filter: blur(100px);
+  color: #91AFBA;
+  position: absolute;
+  z-index: -2;
+}
+
+.hero-yacht::after {
+  content: "";
+  width: 279px;
+  height: 279px;
+  flex-shrink: 0;
+  border-radius: 279px;
+  opacity: 0.8999999761581421;
+  background: #939CAC;
+  filter: blur(100px);
+  position: absolute;
+  z-index: -2;
+  color: #939CAC;
+  top: 57px;
+  right: 161px;
+}
+
+.hero-img:nth-child(4) {
+  top: 22px;
+  z-index: 3;
+}
+
+.hero-img:nth-child(5) {
+  top: 22px;
+  left: 41px;
+  z-index: 2;
+}
+
+.hero-img:nth-child(6) {
+  top: 22px;
+  left: 85px;
+  z-index: 1;
+}
+
+.hero-bg-mob {
+  height: 427px;
+  position: absolute;
+  z-index: -1;
+}
+
+
+
+.hero-yacht-img {
+  max-width: calc(100% - 48px);
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 18px;
+}
+
+.hero-man-img {
+  top: 35px;
+  right: -12px;
+  position: absolute;
+  width: 133px;
+  height: 133px;
+}
+
+.hero-clients-title {
+  color: #11131F;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  margin-bottom: 52px;
+}
+
+.hero-avatar-list {
+  position: absolute;
+  top: 24px;
+  display: flex;
+}
+
+.hero-avatar-item:nth-child(1) {
+  z-index: 12;
+}
+
+.hero-avatar-item:nth-child(2) {
+  z-index: 6;
+  margin-left: -8px;
+}
+
+.hero-avatar-item:nth-child(3) {
+  z-index: 3;
+  margin-left: -8px;
+}
+
+
+
+.hero-price {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-price-money {
+  color: #11131F;
+  font-family: DM Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  /* 52.8px */
+  letter-spacing: -2.16px;
+  text-transform: uppercase;
+}
+
+.hero-price-text {
+  color: #11131F;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 19.6px */
+  letter-spacing: -0.63px;
+}
+
+@media only screen and (min-width: 375px) {
+
+  .hero-yacht {
+    max-width: 335px;
+  }
+
+  .hero-yacht-img {
+    max-width: 287px;
+    margin-bottom: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding: 64px 0 50px;
+  }
+
+  .hero-bg-mob {
+    width: 426px;
+    height: 596px;
+  }
+
+  .hero-luxury {
+    font-style: italic;
+  }
+
+  .hero-man-img {
+    width: 233px;
+    height: 233px;
+    top: 32px;
+    right: -146px;
+  }
+
+  .hero-yacht {
+    max-width: 426px;
+    background-image: url(/img/hero/hero-bg-mob@1x.webp);
+    background-size: 100% 100%;
+    height: 597px;
+    margin-left: 0;
+    padding: 99px 32px 64px;
+    position: relative;
+  }
+
+  .hero-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -2.7px;
+    margin-bottom: 16px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    max-width: 539px;
+    margin-bottom: 32px;
+  }
+
+  .hero-price-text {
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.81px;
+  }
+
+  .hero-yacht-img {
+    max-width: 378px;
+    margin-bottom: 22px;
+  }
+
+  .hero-price-money {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -2.7px;
+  }
+
+  .hero-button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.81px;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-button-Expl {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 110%;
+    /* 19.8px */
+    letter-spacing: -0.81px;
+  }
+
+  .hero-section-btn {
+    margin-bottom: 64px;
+  }
+
+  .hero-clients-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 111px;
+    letter-spacing: 0.56px;
+  }
+
+  .hero-img {
+    margin-bottom: 11px;
+  }
+
+  .hero-yacht::before {
+    width: 414px;
+    height: 414px;
+    top: 44px;
+  }
+
+  .hero-yacht::after {
+    top: 28px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-section {
+    padding-bottom: 82px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    gap: 236px;
+    align-items: center;
+  }
+
+  .hero-block-wrap {
+    order: 2;
+  }
+
+  .hero-yacht {
+    margin: 0;
+  }
+
+  .hero-title {
+    max-width: 554px;
+  }
+
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: var(--green-hover);
+  }
+
+  .hero-button-Expl:hover,
+  .hero-button-Expl:focus {
+    border-color: var(--light-green);
+    color: var(--light-green);
+  }
+
+  .hero-yacht::before {
+    top: 136px;
+  }
+
+  .hero-yacht::after {
+    width: 316px;
+    height: 316px;
+    top: 118px;
+    left: 157px;
+  }
+
+  .hero-container::after {
+    content: "";
+    width: 414px;
+    height: 414px;
+    border-radius: 50%;
+    opacity: 0.8999999761581421;
+    background: #939CAC;
+    filter: blur(100px);
+    position: absolute;
+    z-index: -2;
+    color: #939CAC;
+    bottom: 0;
+    left: -103px;
+  }
+
+}
