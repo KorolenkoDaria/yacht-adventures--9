@@ -335,29 +335,29 @@
 
 /* slider */
 
-.swiper {
-    .swiper {
+.yacht-section .swiper {
+    .yacht-section .swiper {
         width: 320px;
         height: 469px;
     }
 }
 
 @media (min-width: 375px) {
-    .swiper {
+    .yacht-section .swiper {
         width: 335px;
         height: 469px;
     }
 }
 
 @media (min-width: 768px) {
-    .swiper {
+    .yacht-section .swiper {
         width: 704px;
         height: 508px;
     }
 }
 
 @media (min-width: 1280px) {
-    .swiper {
+    .yacht-section .swiper {
         width: 1094px;
         height: 508px;
     }

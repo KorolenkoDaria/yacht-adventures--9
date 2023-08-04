@@ -60,11 +60,6 @@ picture.rev-img {
     }
 }
 
-@media only screen and (min-width: 120px) {
-    .rev-title {
-        margin-bottom: 0;
-    }
-}
 
 .rev-span {
     font-style: italic;
@@ -117,35 +112,12 @@ picture.rev-img {
     padding: 24px 14px;
     border-radius: 24px;
     background-color: var(--dark-bg-elements);
-}
-
-@media only screen and (min-width: 768px) {
-    .rev-card {
-        width: calc((100% - 16px)/2);
-
-    }
+    margin-bottom: 14px;
 }
 
 @media only screen and (min-width: 1280px) {
     .rev-card {
-        width: calc((100% - 64px)/3);
-
         padding: 32px;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .rev-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .rev-list {
-        flex-wrap: nowrap;
-        gap: 32px;
     }
 }
 
@@ -209,7 +181,7 @@ picture.rev-img {
     position: fixed;
     right: 32px;
     bottom: 332px;
-    z-index: 100000;
+    z-index: 900;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -224,6 +196,7 @@ picture.rev-img {
 .rev-button:focus {
     background-color: #88B3B9;
 }
+
 .rev-button-div {
     display: flex;
     justify-content: flex-end;
@@ -239,3 +212,58 @@ picture.rev-img {
 
 }
 
+
+.rev .swiper {
+    width: 287px;
+    height: 208px;
+}
+
+
+@media (min-width: 375px) {
+    .rev .swiper {
+        width: 287px;
+        height: 208px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rev .swiper {
+        width: 704px;
+        height: 266px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .rev .swiper {
+        width: 1216px;
+        height: 282px;
+    }
+
+    .swiper-pagination {
+        visibility: hidden;
+    }
+}
+
+
+.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+
+}
+
+.swiper-pagination-bullet {
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #1F212D;
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #88B3B9;
+    border: 1px solid #93ABAE;
+    box-shadow: 2px 2px 3px 0px rgba(79, 98, 120, 0.90) inset, 3px 3px 5px 0px rgba(213, 230, 245, 0.40) inset, 0px 0px 4px 0px rgba(46, 68, 87, 0.00) inset;
+}
